@@ -1,0 +1,310 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;700&display=swap');
+
+/*Header principal*/
+.header-envio{
+    background-color: black;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    height: 25px;
+}
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container-iconos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.icon {
+    object-fit: contain;
+    width: 100%;
+    height: 20px;
+    margin: 15px;
+}
+
+.hdr-srch {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.buscador {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.buscar {
+    background-color: #aaaaaa;
+	color: white;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+    height: 20px;
+    width: 100%;
+}
+
+.cont-icon {
+    display: flex;
+    justify-content: center;
+    width: 8%;
+    height: 50px;
+}
+
+.iconos-header {
+    margin-top: 35px;
+}
+
+.hdr-srch {
+    display: flex;
+    justify-content: center;
+    width: 55%;
+}
+
+.search {
+    width: 60%;
+}
+.buscador {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    background: #FFF;
+}
+
+.headerlogo{
+    height: 100px;
+    display: flex;
+}
+
+#logo{
+    display: flex;
+}
+
+/*nav*/
+.menu {
+    width: 100%;
+    height: 50px;
+    padding-top: 25px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding-bottom: 30px;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul ul {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+
+  }
+  
+  nav ul ul li {
+    display: block;
+    float: none;
+  }
+  
+  nav ul li:hover > ul {
+    visibility:visible ;
+    display: block;
+    width: 150px;
+  }
+  
+  nav ul ul li a:hover {
+    background-color: #dddcdc;
+  }
+
+/*Division de pagina*/
+.cortes{
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.lineas{
+    border-top: 1px solid rgba(92, 90, 90, 0.493);
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    margin: 10px auto 0 auto;
+}
+
+.cont-ordenar {
+    display: flex;
+    justify-content: right;
+    padding-right: 90px;
+}
+
+.ordenar {
+    width: 150px;
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    border-bottom: rgba(0, 0, 0, 0.349) 1px outset;
+    padding-top: 20px;
+}
+
+/*Box categorias*/
+.contenedor-categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 40px;
+}
+
+.column-categorias{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 40px;
+    margin-right: 25px;
+}
+
+.div-categorias {
+    width: 200px;
+    border-bottom: rgba(0, 0, 0, 0.308) 1px outset;
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+/*Grid cards generales productos*/
+.contenedor-grid {
+    width: 80%;
+}
+
+.grid{
+    display: grid;
+}
+
+.grids {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.grid-template-columns-rows {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 530px);
+    row-gap: 30px;
+}
+
+/*Box card producto*/
+.card{
+    width: 350px;
+    height: 500px;
+    border-radius: 2%;
+    background-color: white;
+    box-shadow: 0px 0px 17px 7px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 0px 0px 17px 7px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 0px 17px 7px rgba(0,0,0,0.26);
+
+}
+
+.image-content,
+.card-content,
+.precio-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.nombre-marca, .precio {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cantidad-cuotas {
+    color: #f8d58a;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.nombre-producto {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.separador {
+    border: none;
+}
+.card-img {
+    position: relative;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 220px;
+    width: 250px;
+    object-fit:cover;
+
+}
+
+.foto-producto{
+    padding-top: 25px;
+    object-fit:contain;
+    width: 200px;
+    height: 200px;
+}

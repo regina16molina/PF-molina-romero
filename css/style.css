@@ -1,0 +1,692 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;700&display=swap');
+
+/*Divider*/
+.contenedor-envio {
+    display: flex;
+    justify-content: center;
+}
+
+.header-envio {
+    background-color: #BF2A2A;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+/*Header*/
+.logo-img {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+#brand {
+    width: 60%;
+}
+
+.cont-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.d-flex {
+    width: 100%;
+}
+
+#barra {
+    border: black 1px solid;
+}
+
+/*div iconos*/
+.iconos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+}
+
+.contenedor-icon {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.img-logos {
+    width: 28%;
+}
+
+.cont-icon {
+    display: flex;
+    justify-content: center;
+}
+
+/*Nav*/
+#cont-fluid {
+    background-color: #ffffff;
+    justify-content: end;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    color: #BF2A2A;
+}
+
+.nav-item {
+    padding-right: 80px;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navbar-brand {
+    padding-left: 40px;
+}
+
+#barra {
+    border: black 1px solid;
+}
+
+#btn-outline-success {
+    border: #BF2A2A 1px solid;
+    --bs-btn-color: rgba(0, 0, 0, 0.644);
+    --bs-btn-border-color: rgba(0, 0, 0, 0.644);
+    ;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #BF2A2A;
+    --bs-btn-hover-border-color: #BF2A2A;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #BF2A2A;
+    --bs-btn-active-border-color: #BF2A2A;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #BF2A2A;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #BF2A2A;
+    --bs-gradient: none;
+}
+
+/*Grid informacion*/
+.contenedor-info {
+    background-color: #03658C;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.cuotas,
+.envio,
+.metodos {
+    object-fit: contain;
+    width: 65%;
+}
+
+.grid-1 {
+    width: 70%;
+    display: grid;
+}
+
+.grid-template-columns-rows-1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+/* Empieza GRID II*/
+.contenedor-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-left: 40px;
+}
+
+.grid {
+    display: grid;
+    width: 90%;
+}
+
+.grid-template-columns-rows {
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: 2fr;
+    row-gap: 30px;
+}
+
+.grids {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card {
+    width: 90%;
+    height: 500px;
+    border-radius: 2%;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
+    box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.texto-descripcion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.descripcion {
+    width: 85%;
+}
+
+.nombre-marca {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.descripcion-producto {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.base-clinique {
+    padding-bottom: 15px;
+}
+
+.polvo-toofaced {
+    padding-bottom: 15px;
+}
+
+.nombre-producto {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.card-img {
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+
+.foto-producto {
+    padding-top: 25px;
+    object-fit: contain;
+    width: 50%;
+}
+
+hr {
+    border: none;
+}
+
+/*Termina GRID II*/
+
+.cortes {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.8em;
+    padding-top: 30px;
+}
+
+.lineas {
+    border-top: 1px solid rgba(92, 90, 90, 0.493);
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    margin: 10px auto 0 auto;
+    padding-bottom: 20px;
+}
+
+/*parte fotos info*/
+.img-info {
+    width: 100%;
+}
+
+/*caja suscripcion*/
+.caja-suscripcion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.cont-suscripcion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83%;
+    padding-top: 30px;
+    background-color: #03658C;
+}
+
+.texto-suscripcion {
+    width: 52%;
+    padding-left: 40px;
+    color: white;
+}
+
+.texto-suscripcion h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+.texto-suscripcion h2 {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.form-suscripcion {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.row-form {
+    display: flex;
+    flex-direction: row;
+}
+
+#exampleInputName1 {
+    width: 70%;
+}
+
+#exampleInputEmail1 {
+    width: 70%;
+}
+
+#btn-primary {
+    width: 20%;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #BF2A2A;
+    --bs-btn-border-color: #BF2A2A;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #D996A7;
+    --bs-btn-hover-border-color: #D996A7;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #D996A7;
+    --bs-btn-active-border-color: #D996A7;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #D996A7;
+    --bs-btn-disabled-border-color: #D996A7;
+}
+
+/*footer*/
+.caja-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.nosotros {
+    width: 31%;
+}
+
+.links {
+    width: 31%;
+}
+
+.nosotros,
+.links,
+.contacto {
+    padding-right: 40px;
+}
+
+.contacto {
+    width: 31%;
+}
+
+.contacto ul {
+    list-style: none;
+}
+
+#nosotros {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#nosotros-texto {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: left;
+}
+
+#links {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#contacto {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.links ul {
+    text-align: left;
+    list-style: none;
+}
+
+@media (width < 992px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        row-gap: 30px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja-fotos {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    #cont-fluid {
+        justify-content: end;
+    }
+}
+
+@media (width < 963px) {
+    .logo-img {
+        width: 20%;
+    }
+
+    .grid-1 {
+        width: 90%;
+    }
+}
+
+@media (width < 950px) {
+    .logo-img {
+        width: 20%;
+    }
+
+    #brand {
+        width: 88%;
+    }
+
+    .iconos {
+        width: 20%;
+    }
+
+    .contenedor-icon {
+        width: 100%;
+    }
+
+    .grid-1 {
+        width: 90%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        row-gap: 30px;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #btn-primary {
+        width: 30%;
+    }
+}
+
+@media (width < 906px) {
+    .logo-img {
+        width: 22%;
+    }
+
+    #brand {
+        width: 80%;
+    }
+
+    #btn-primary {
+        width: 30%;
+    }
+
+}
+
+@media (width < 893px) {
+    .logo-img {
+        width: 22%;
+    }
+
+    #brand {
+        width: 80%;
+    }
+}
+
+@media (width < 815px) {
+    #brand {
+        width: 80%;
+    }
+
+    #btn-primary {
+        width: 30%;
+    }
+
+    .iconos {
+        width: 25%;
+    }
+
+    .contenedor-icon {
+        width: 100%;
+    }
+}
+
+@media (width < 715px) {
+    .row-form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (width < 678px) {
+    .texto-suscripcion h1 {
+        font-size: 2rem;
+    }
+
+    .texto-suscripcion h2 {
+        font-size: 1.5rem;
+    }
+
+    #btn-primary {
+        width: 40%;
+    }
+
+    .cortes {
+        padding-top: 0px;
+    }
+
+    .cuotas,
+    .envio,
+    .metodos {
+        height: 80px;
+    }
+
+    .cortes {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (width < 560px) {
+    .texto-suscripcion h1 {
+        font-size: 1.8rem;
+    }
+
+    .texto-suscripcion h2 {
+        font-size: 1.5rem;
+    }
+
+    .box-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros,
+    .links,
+    .contacto {
+        width: 100%;
+    }
+}
+
+@media (width < 513px) {
+    .texto-suscripcion h1 {
+        font-size: 1.5em;
+    }
+
+    .texto-suscripcion h2 {
+        font-size: 1.2em;
+    }
+
+    .mb-3 {
+        width: 80%;
+    }
+}
+
+@media (width < 477px) {
+    #btn-primary {
+        width: 40%;
+    }
+}
+
+@media (width < 455px) {
+    #btn-primary {
+        width: 50%;
+    }
+
+    .mb-3 {
+        width: 85%;
+    }
+}
+
+@media (width < 443px) {
+    .texto-suscripcion h1 {
+        font-size: 1.3em;
+    }
+
+    .texto-suscripcion h2 {
+        font-size: 1.1em;
+    }
+}
+
+@media (width < 423px) {
+    .mb-3 {
+        width: 95%;
+    }
+
+    .cortes {
+        font-size: 1.2em;
+    }
+}
+
+@media (width < 397px) {
+    .texto-suscripcion h1 {
+        font-size: 1.2em;
+    }
+
+    .texto-suscripcion h2 {
+        font-size: 1em;
+    }
+}
+
+@media (width < 380px) {
+    .cont-suscripcion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texto-suscripcion {
+        width: 90%;
+        padding-left: 5px;
+    }
+
+    .form-suscripcion {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .mb-3 {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .suscripcion {
+        padding-bottom: 20px;
+    }
+
+}

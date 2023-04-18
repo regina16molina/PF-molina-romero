@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;700&display=swap');
+/*Divider*/
+.contenedor-envio {
+    display: flex;
+    justify-content: center;
+}
+
+.header-envio{
+    background-color: black;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+/*Header*/
+.logo-img{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+#brand{
+    width: 60%;
+}
+
+.cont-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.d-flex {
+    width: 100%;
+}
+
+#barra {
+    border: black 1px solid;
+}
+/*div iconos*/
+.iconos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+}
+
+.contenedor-icon {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.img-logos {
+    width: 28%;
+}
+
+.cont-icon{
+    display: flex;
+    justify-content: center;
+}
+/*Nav*/
+.navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+}
+
+.nav-item {
+    padding-right: 50px;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navbar-brand {
+    padding-left: 40px;
+}
+
+#barra {
+    border: black 1px solid;
+}
+
+#btn-outline-success{
+    border: #BF2A2A 1px solid;
+    --bs-btn-color: rgba(0, 0, 0, 0.644);
+    --bs-btn-border-color: rgba(0, 0, 0, 0.644);
+    ;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #BF2A2A;
+    --bs-btn-hover-border-color: #BF2A2A;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #BF2A2A;
+    --bs-btn-active-border-color: #BF2A2A;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #BF2A2A;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #BF2A2A;
+    --bs-gradient: none;
+}
+/*Division de pagina*/
+.cortes{
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-bottom: 35px;
+}
+
+.lineas{
+    border-top: 1px solid rgba(92, 90, 90, 0.493);
+    height: 2px;
+    width: 100%;
+    padding: 0;
+    margin: 10px auto 0 auto;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+/*SIDE MENU*/
+.menu-vertical {
+    padding-top: 30px;
+    width: 15%;
+}
+
+.side-bar ul{
+    list-style: none;
+}
+
+.side-bar ul a{
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    color: black;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+
+.side-bar ul ul{
+    height: 0px;
+    overflow: hidden;
+}
+
+.side-bar ul li:hover ul{
+    height: auto;
+    overflow: hidden;
+}
+
+.submenu{
+    padding: 0;
+}
+
+/*Grid cards generales productos*/
+
+.contenedor-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    width: 80%;
+}
+
+.grid{
+    display: grid;
+    row-gap: 40px;
+}
+
+.grid-template-columns-rows {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 2fr);
+}
+
+.grids {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card{
+    width: 90%;
+    height: 500px;
+    border-radius: 2%;
+    background-color: white;
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.56);
+-webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.56);
+-moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.56);;
+}
+
+.image-content {
+    width: 100%;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-descripcion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.descripcion {
+    width: 85%;
+}
+
+.nombre-marca {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.descripcion-producto {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.nombre-producto {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+#labial-nyx{
+    width: 57%;
+}
+
+#serum-ordinary, #aceite-ordinary, #hidratante-ordinary {
+    width: 50%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#eye-khiels, #garnier-agua, #acf-protector, #serum-ordinary-2, #corrector-eucerin {
+    width: 55%;
+}
+
+#limpiador-khiels{
+    width: 50%;
+}
+
+hr{
+    border: none;
+}
+/*Box card producto*/
+.card{
+    width: 90%;
+    height: 500px;
+    border-radius: 2%;
+    background-color: white;
+    box-shadow: 0px 0px 17px 7px rgba(0,0,0,0.26);
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.56);
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.56);
+
+}
+
+.image-content,
+.card-content,
+.precio-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card-content{
+    width: 100%;
+}
+
+.nombre-marca, .precio {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.cantidad-cuotas {
+    color: #f8d58a;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.nombre-producto {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.separador {
+    border: none;
+}
+.card-img {
+    position: relative;
+    background: #fff;
+    padding: 3px;
+}
+
+.card-image .card-img {
+    height: 220px;
+    width: 250px;
+    object-fit:cover;
+
+}
+
+.foto-producto{
+    padding-top: 25px;
+    object-fit:contain;
+    width: 200px;
+    height: 200px;
+}
+
+/*Navigation*/
+.contenedor-navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cont-pages {
+    padding-top: 20px;
+}
+
+.page-item{
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-radius: 5%;
+}
+
+/*footer*/
+.caja-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.nosotros {
+    width: 31%;
+}
+
+.links {
+    width: 31%;
+}
+
+.nosotros, .links, .contacto {
+    padding-right: 40px;
+}
+
+.contacto{
+    width: 31%;
+}
+
+.contacto ul {
+    list-style: none;
+}
+
+#nosotros {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#nosotros-texto {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: left;
+}
+
+#links {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#contacto {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.links ul {
+    text-align: left;
+    list-style: none;
+}
