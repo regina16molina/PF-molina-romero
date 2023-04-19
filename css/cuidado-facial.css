@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;700&display=swap');
 
-/*Divider*/
+/****DIVIDER****/
 .contenedor-envio {
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
     width: 100%;
 }
 
-/*Header*/
+/****HEADER****/
 .logo-img {
     display: flex;
     justify-content: center;
@@ -48,7 +48,7 @@
     border: black 1px solid;
 }
 
-/*div iconos*/
+/****DIV ICONOS****/
 .iconos {
     display: flex;
     flex-direction: row;
@@ -72,7 +72,7 @@
     justify-content: center;
 }
 
-/*Nav*/
+/****NAV****/
 #cont-fluid {
     justify-content: end;
     background-color: #ffffff;
@@ -120,7 +120,7 @@
     --bs-gradient: none;
 }
 
-/*Division de pagina*/
+/****CORTES****/
 .cortes {
     text-align: center;
     font-family: 'League Spartan', sans-serif;
@@ -144,7 +144,7 @@ main {
     flex-direction: row;
 }
 
-/*SIDE MENU*/
+/****SIDE MENU****/
 .menu-vertical {
     padding-top: 30px;
     width: 15%;
@@ -180,7 +180,7 @@ main {
     padding: 0;
 }
 
-/*Grid cards generales productos*/
+/****GRID CARDS PRODUCTOS****/
 
 .contenedor-grid {
     display: flex;
@@ -294,7 +294,7 @@ hr {
     border: none;
 }
 
-/*Box card producto*/
+/****BOX CARD PRODUCTO****/
 .card {
     width: 90%;
     height: 500px;
@@ -370,7 +370,7 @@ hr {
     height: 200px;
 }
 
-/*Navigation*/
+/****NAVIGATION****/
 .contenedor-navigation {
     display: flex;
     justify-content: center;
@@ -386,7 +386,7 @@ hr {
     border-radius: 5%;
 }
 
-/*footer*/
+/****FOOTER****/
 .caja-footer {
     display: flex;
     justify-content: center;
@@ -459,7 +459,7 @@ hr {
     list-style: none;
 }
 
-/*queries*/
+/****QUERIES****/
 
 @media (width < 1456px) {
     #eye-khiels {

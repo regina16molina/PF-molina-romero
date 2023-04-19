@@ -1,174 +1,137 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;700&display=swap');
 
-/*Header principal*/
-.header-envio{
-    background-color: black;
+/****DIVIDER****/
+.contenedor-envio {
+    display: flex;
+    justify-content: center;
+}
+
+.header-envio {
+    background-color: #BF2A2A;
     color: white;
     font-family: 'League Spartan', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
-    height: 25px;
-}
-
-.container-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.container-iconos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-.icon {
-    object-fit: contain;
+    height: 100%;
     width: 100%;
-    height: 20px;
-    margin: 15px;
 }
 
-.hdr-srch {
+/****HEADER****/
+.logo-img {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+#brand {
+    width: 60%;
+}
+
+.cont-header {
     display: flex;
     justify-content: space-between;
-
 }
 
-.search {
+#search-bar {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-
+    width: 40%;
 }
 
-.buscador {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
-}
-
-.buscar {
-    background-color: #aaaaaa;
-	color: white;
-	border: none;
-	border-radius: 0 5px 5px 0;
-	cursor: pointer;
-    height: 20px;
+.d-flex {
     width: 100%;
+}
+
+#barra {
+    border: black 1px solid;
+}
+
+/****DIV ICONOS****/
+.iconos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+}
+
+.contenedor-icon {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.img-logos {
+    width: 28%;
 }
 
 .cont-icon {
     display: flex;
     justify-content: center;
-    width: 8%;
-    height: 50px;
 }
 
-.iconos-header {
-    margin-top: 35px;
+/****NAV****/
+#cont-fluid {
+    justify-content: end;
+    background-color: #ffffff;
 }
 
-.hdr-srch {
+.navbar-expand-lg .navbar-collapse {
     display: flex;
-    justify-content: center;
-    width: 55%;
+    flex-direction: column-reverse;
+    align-content: center;
+    color: #BF2A2A;
 }
 
-.search {
-    width: 60%;
-}
-.buscador {
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    width: 100%;
-    height: 30px;
-    background: #FFF;
-}
-
-.headerlogo{
-    height: 100px;
-    display: flex;
-}
-
-#logo{
-    display: flex;
-}
-
-/*nav*/
-.menu {
-    width: 100%;
-    height: 50px;
-    padding-top: 25px;
-}
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 0;
-    padding-bottom: 30px;
+.nav-item {
+    padding-right: 80px;
     font-family: 'League Spartan', sans-serif;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-  }
-  
-  nav a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-  }
+    text-align: center;
+}
 
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul ul {
-    visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    background-color: white;
+.navbar-brand {
+    padding-left: 40px;
+}
 
-  }
-  
-  nav ul ul li {
-    display: block;
-    float: none;
-  }
-  
-  nav ul li:hover > ul {
-    visibility:visible ;
-    display: block;
-    width: 150px;
-  }
-  
-  nav ul ul li a:hover {
-    background-color: #dddcdc;
-  }
+#barra {
+    border: black 1px solid;
+}
 
-/*Division de pagina*/
-.cortes{
+#btn-outline-success {
+    border: #BF2A2A 1px solid;
+    --bs-btn-color: rgba(0, 0, 0, 0.644);
+    --bs-btn-border-color: rgba(0, 0, 0, 0.644);
+    ;
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #BF2A2A;
+    --bs-btn-hover-border-color: #BF2A2A;
+    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #BF2A2A;
+    --bs-btn-active-border-color: #BF2A2A;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #BF2A2A;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #BF2A2A;
+    --bs-gradient: none;
+}
+
+/****CORTES****/
+.cortes {
     text-align: center;
     font-family: 'League Spartan', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    margin-top: 50px;
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: 40px;
     margin-bottom: 35px;
 }
 
-.lineas{
+.lineas {
     border-top: 1px solid rgba(92, 90, 90, 0.493);
     height: 2px;
     width: 100%;
@@ -176,80 +139,152 @@ nav ul {
     margin: 10px auto 0 auto;
 }
 
-.cont-ordenar {
-    display: flex;
-    justify-content: right;
-    padding-right: 90px;
-}
-
-.ordenar {
-    width: 150px;
-    color: black;
-    font-family: 'League Spartan', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    border-bottom: rgba(0, 0, 0, 0.349) 1px outset;
-    padding-top: 20px;
-}
-
-/*Box categorias*/
-.contenedor-categorias{
+main {
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    padding-top: 40px;
 }
 
-.column-categorias{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    padding-left: 40px;
-    margin-right: 25px;
+/****SIDE MENU****/
+.menu-vertical {
+    padding-top: 30px;
+    width: 15%;
 }
 
-.div-categorias {
-    width: 200px;
-    border-bottom: rgba(0, 0, 0, 0.308) 1px outset;
-    color: black;
+.side-bar ul {
+    list-style: none;
+}
+
+.side-bar ul a {
+    box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
+    font-size: 1.2em;
+    color: black;
+    display: block;
+    width: 100%;
+    text-decoration: none;
 }
 
-/*Grid cards generales productos*/
+
+.side-bar ul ul {
+    height: 0px;
+    overflow: hidden;
+}
+
+.side-bar ul li:hover ul {
+    height: auto;
+    overflow: hidden;
+}
+
+.submenu {
+    padding: 0;
+}
+
+/****GRID CARDS PRODUCTOS****/
+
 .contenedor-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
     width: 80%;
 }
 
-.grid{
+.grid {
     display: grid;
+    row-gap: 40px;
+}
+
+.grid-template-columns-rows {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 2fr);
 }
 
 .grids {
     display: flex;
     justify-content: center;
-    align-items: center;
-    
 }
 
-.grid-template-columns-rows {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 530px);
-    row-gap: 30px;
-}
 
-/*Box card producto*/
-.card{
-    width: 350px;
+.card {
+    width: 90%;
     height: 500px;
     border-radius: 2%;
     background-color: white;
-    box-shadow: 0px 0px 17px 7px rgba(0,0,0,0.26);
-    -webkit-box-shadow: 0px 0px 17px 7px rgba(0,0,0,0.26);
-    -moz-box-shadow: 0px 0px 17px 7px rgba(0,0,0,0.26);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.56);
+    ;
+}
+
+.image-content {
+    width: 100%;
+}
+
+.image-content,
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-descripcion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.descripcion {
+    width: 85%;
+}
+
+.nombre-marca {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.descripcion-producto {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.nombre-producto {
+    color: black;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+
+hr {
+    border: none;
+}
+
+/****BOX CARD PRODUCTO****/
+.card {
+    width: 90%;
+    height: 500px;
+    border-radius: 2%;
+    background-color: white;
+    box-shadow: 0px 0px 17px 7px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.56);
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.56);
 
 }
 
@@ -262,7 +297,12 @@ nav ul {
 
 }
 
-.nombre-marca, .precio {
+.card-content {
+    width: 100%;
+}
+
+.nombre-marca,
+.precio {
     color: black;
     font-family: 'League Spartan', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -277,6 +317,7 @@ nav ul {
     font-weight: 700;
     font-size: 18px;
 }
+
 .nombre-producto {
     color: black;
     font-family: 'League Spartan', sans-serif;
@@ -289,6 +330,7 @@ nav ul {
 .separador {
     border: none;
 }
+
 .card-img {
     position: relative;
     background: #fff;
@@ -298,13 +340,117 @@ nav ul {
 .card-image .card-img {
     height: 220px;
     width: 250px;
-    object-fit:cover;
+    object-fit: cover;
 
 }
 
-.foto-producto{
+.foto-producto {
     padding-top: 25px;
-    object-fit:contain;
+    object-fit: contain;
     width: 200px;
     height: 200px;
+}
+
+#paleta-too-faced,
+#paleta-anastasia,
+#paleta-natasha,
+#paleta-nars,
+#paleta-clarins,
+#sombra-clarins,
+#sombra-rem,
+#paleta-huda-2 {
+    width: 50%;
+}
+
+#paleta-huda {
+    width: 83%;
+}
+
+/****NAVIGATION****/
+.contenedor-navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cont-pages {
+    padding-top: 20px;
+}
+
+.page-item {
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    border-radius: 5%;
+}
+
+/****FOOTER****/
+.caja-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(243, 243, 243);
+}
+
+.box-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.nosotros {
+    width: 31%;
+}
+
+.links {
+    width: 31%;
+}
+
+.nosotros,
+.links,
+.contacto {
+    padding-right: 40px;
+}
+
+.contacto {
+    width: 31%;
+}
+
+.contacto ul {
+    list-style: none;
+}
+
+#nosotros {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#nosotros-texto {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+    text-align: left;
+}
+
+#links {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+#contacto {
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.links ul {
+    text-align: left;
+    list-style: none;
 }

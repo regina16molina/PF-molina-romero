@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;700&display=swap');
-
-/*Divider*/
+/****DIVIDER****/
 .contenedor-envio {
     display: flex;
     justify-content: center;
@@ -17,7 +16,7 @@
     width: 100%;
 }
 
-/*Header*/
+/****HEADER****/
 .logo-img {
     display: flex;
     justify-content: center;
@@ -48,7 +47,7 @@
     border: black 1px solid;
 }
 
-/*div iconos*/
+/****DIV ICONOS****/
 .iconos {
     display: flex;
     flex-direction: row;
@@ -72,7 +71,7 @@
     justify-content: center;
 }
 
-/*Nav*/
+/****NAV****/
 #cont-fluid {
     background-color: #ffffff;
 }
@@ -119,7 +118,7 @@
     --bs-gradient: none;
 }
 
-/*Division de pagina*/
+/****CORTES****/
 .cortes {
     text-align: center;
     font-family: 'League Spartan', sans-serif;
@@ -143,7 +142,7 @@ main {
     flex-direction: row;
 }
 
-/*SIDE MENU*/
+/****SIDE MENU****/
 .menu-vertical {
     padding-top: 30px;
     width: 15%;
@@ -179,7 +178,7 @@ main {
     padding: 0;
 }
 
-/*Grid cards generales productos*/
+/****GRID CARDS PRODUCTOS****/
 
 .contenedor-grid {
     display: flex;
@@ -269,11 +268,16 @@ main {
     justify-content: center;
 }
 
-#labial-nyx, #labial-nyx-2, #labial-mac, #gloss-maybelline, #labial-lancome {
+#labial-nyx,
+#labial-nyx-2,
+#labial-mac,
+#gloss-maybelline,
+#labial-lancome {
     width: 57%;
 }
 
-#lipglass, #labial-mac-2{
+#lipglass,
+#labial-mac-2 {
     width: 61%;
 }
 
@@ -282,7 +286,7 @@ hr {
     border: none;
 }
 
-/*Box card producto*/
+/****BOX CARD PRODUCTO****/
 .card {
     width: 90%;
     height: 500px;
@@ -358,7 +362,7 @@ hr {
     height: 200px;
 }
 
-/*Navigation*/
+/****NAVIGATION****/
 .contenedor-navigation {
     display: flex;
     justify-content: center;
@@ -374,7 +378,7 @@ hr {
     border-radius: 5%;
 }
 
-/*footer*/
+/****FOOTER****/
 .caja-footer {
     display: flex;
     justify-content: center;
@@ -447,24 +451,24 @@ hr {
     list-style: none;
 }
 
-/*queries*/
-@media (width < 1386px){
+/****QUERIES****/
+@media (width < 1386px) {
     #labial-nyx-2 {
         width: 51%;
     }
 }
 
-@media (width < 1322px){
-    .menu-vertical{
+@media (width < 1322px) {
+    .menu-vertical {
         width: 18%;
     }
 
-    .cortes{
+    .cortes {
         font-size: 2.5em;
     }
 }
 
-@media (width < 1183px){
+@media (width < 1183px) {
     #labial-mac-2 {
         width: 56%;
     }
@@ -474,8 +478,8 @@ hr {
     }
 }
 
-@media (width < 1176px){
-    .menu-vertical{
+@media (width < 1176px) {
+    .menu-vertical {
         width: 20%;
     }
 
@@ -490,8 +494,8 @@ hr {
     }
 }
 
-@media (width < 1036px){
-    .grid-template-columns-rows{
+@media (width < 1036px) {
+    .grid-template-columns-rows {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -503,35 +507,37 @@ hr {
         width: 52%;
     }
 
-    #lipglass, #labial-lancome {
+    #lipglass,
+    #labial-lancome {
         width: 56%;
     }
 
-    .menu-vertical{
+    .menu-vertical {
         width: 25%;
     }
 
-    .img-logos{
+    .img-logos {
         width: 35%;
     }
 }
 
-@media (width < 992px){
-    #cont-fluid{
+@media (width < 992px) {
+    #cont-fluid {
         justify-content: end;
     }
 }
 
-@media (width < 970px){
+@media (width < 970px) {
     #labial-nyx-2 {
         width: 46%;
     }
 }
 
-@media (width < 851px){
-    .grid{
+@media (width < 851px) {
+    .grid {
         column-gap: 5px;
     }
+
     .slide-content {
         width: 90%;
     }
@@ -554,24 +560,55 @@ hr {
 }
 
 
-@media (width < 801px){
-    .grid-template-columns-rows{
+@media (width < 801px) {
+    .grid-template-columns-rows {
         grid-template-columns: 1fr;
     }
 }
 
-@media (width < 735px){
-    .menu-vertical{
+@media (width < 735px) {
+    .menu-vertical {
         width: 35%;
     }
 }
 
-@media (width < 639px){
-    .menu-vertical{
+@media (width < 639px) {
+    .menu-vertical {
         width: 40%;
     }
 
     .img-logos {
         width: 45%;
+    }
+}
+
+@media (width < 583px) {
+    .img-logos {
+        width: 60%;
+    }
+
+    .menu-vertical {
+        width: 45%;
+    }
+
+    .btn-outline-success {
+        width: 40%;
+    }
+
+    .box-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nosotros,
+    .links,
+    .contacto {
+        width: 100%;
+    }
+}
+
+@media (width < 430px) {
+    .categoria {
+        font-size: 0.8em;
     }
 }
