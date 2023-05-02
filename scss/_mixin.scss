@@ -1,0 +1,41 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin media ($breakpoint){
+    @if $breakpoint == mobile {
+        @media screen and (max-width: 576px){
+            @content;
+        }
+
+    @if $breakpoint == tablet {
+        @media screen and (max-width: 992px){
+            @content;
+        }
+        @if $breakpoint == desktop {
+            @media screen and (max-width: 1200px) {
+                @content;
+            }
+        }
+    }
+    }
+}
+
+#head-color{
+    @include media(mobile){
+        background-color: green;
+}
+}
+
+.contenedor-envio .header-envio{
+    @include media(tablet){
+        color: green;
+    }
+}
+

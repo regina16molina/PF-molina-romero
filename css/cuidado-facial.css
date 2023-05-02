@@ -182,7 +182,7 @@ main {
 
 /****GRID CARDS PRODUCTOS****/
 
-.contenedor-grid {
+.cont-grid {
     display: flex;
     justify-content: center;
     align-items: center;

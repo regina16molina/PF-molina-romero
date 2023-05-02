@@ -270,26 +270,6 @@ main {
     justify-content: center;
 }
 
-#mac-iluminador,
-#mac-mascara,
-#mac-labial,
-#mac-mascara-2,
-#mac-polvo {
-    width: 50%;
-}
-
-#mac-labial-2,
-#mac-corrector {
-    width: 54%;
-}
-
-#mac-rubor {
-    width: 54%;
-}
-
-#mascara-maybelline {
-    width: 58%;
-}
 
 hr {
     border: none;

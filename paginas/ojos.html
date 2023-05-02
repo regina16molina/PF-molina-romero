@@ -8,7 +8,7 @@
     <title>Beauty store</title>
     <link rel="shortcut icon" href="../img/logo-beso.png" type="image/x-icon">
     <!--Link a mi CSS-->
-    <link rel="stylesheet" href="../css/ojos.css">
+    <link rel="stylesheet" href="../css/main.css">
     <!--Link CSS BS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -60,7 +60,7 @@
         </section>
 
         <!--Inicia nav-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-body">
 
             <div class="container-fluid" id="cont-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -127,7 +127,7 @@
 
     <main>
 
-
+        <div class="flex-row">
         <!--Side menu vertical-->
         <article class="menu-vertical">
             <nav class="side-bar">
@@ -162,28 +162,28 @@
 
 
         <!--Grid productos-->
-        <section class="contenedor-grid">
-            <article class="grid grid-template-columns-rows">
+        <section class="contenedor-grid-producto">
+            <article class="grid-producto column-row-producto">
 
-                <div class="grids">
-                    <div class="slide-content">
-                        <div class="card">
-                            <div class="image-content">
+                <div class="grids-producto">
+                    <div class="slide-content-producto">
+                        <div class="card-producto">
+                            <div class="image-content-producto">
 
-                                <div class="card-image">
+                                <div class="card-image-producto">
                                     <img id="paleta-too-faced" src="../img/pag-maqullaje/paleta-too-faced.png">
                                 </div>
                             </div>
 
-                            <div class="card-content">
-                                <h2 class="nombre-marca">TOO FACED</h2>
-                                <h3 class="nombre-producto">NATURAL LUST EYE PALETTE</h3>
+                            <div class="card-content-producto">
+                                <h2 class="nombre-marca-producto">TOO FACED</h2>
+                                <h3 class="nombre-producto-producto">NATURAL LUST EYE PALETTE</h3>
                             </div>
                             <hr class="separador">
 
                             <article class="texto-descripcion">
-                                <div class="precio-producto">
-                                    <h2 class="precio">$40.000</h2>
+                                <div class="precio-producto-producto">
+                                    <h2 class="precio-producto">$40.000</h2>
                                     <h3 class="cantidad-cuotas">6 cuotas de $6.666</h3>
                                 </div>
 
@@ -193,25 +193,25 @@
                     </div>
                 </div>
 
-                <div class="grids">
-                    <div class="slide-content">
-                        <div class="card">
-                            <div class="image-content">
+                <div class="grids-producto">
+                    <div class="slide-content-producto">
+                        <div class="card-producto">
+                            <div class="image-content-producto">
 
-                                <div class="card-image">
+                                <div class="card-image-producto">
                                     <img id="paleta-anastasia" src="../img/pag-maqullaje/paleta-anastasia.png"
                                         alt="Paleta de sombras Anastasia Beverly Hills">
                                 </div>
 
-                                <div class="card-content">
-                                    <h2 class="nombre-marca">ANASTASIA BEVERLY HILLS</h2>
-                                    <h3 class="nombre-producto">MINI NORVINA PRO PIGMENT PALETTE VOL.2</h3>
+                                <div class="card-content-producto">
+                                    <h2 class="nombre-marca-producto">ANASTASIA BEVERLY HILLS</h2>
+                                    <h3 class="nombre-producto-producto">MINI NORVINA PRO PIGMENT PALETTE VOL.2</h3>
                                 </div>
                                 <hr class="separador">
 
                                 <article class="texto-descripcion">
-                                    <div class="precio-producto">
-                                        <h2 class="precio">$16.800</h2>
+                                    <div class="precio-producto-producto">
+                                        <h2 class="precio-producto">$16.800</h2>
                                         <h3 class="cantidad-cuotas">3 cuotas de $5.600</h3>
                                     </div>
 
@@ -222,25 +222,25 @@
                     </div>
                 </div>
 
-                <div class="grids">
-                    <div class="slide-content">
-                        <div class="card">
-                            <div class="image-content">
-                                <div class="card-image">
+                <div class="grids-producto">
+                    <div class="slide-content-producto">
+                        <div class="card-producto">
+                            <div class="image-content-producto">
+                                <div class="card-image-producto">
                                     <img id="paleta-natasha" src="../img/pag-maqullaje/paleta-natasha.png"
                                         alt="Paleta de sombras colores pastel de Natasha Denona"">
                                 </div>
                             </div>
 
-                            <div class=" card-content">
-                                    <h2 class="nombre-marca">NATASHA DENONA</h2>
-                                    <h3 class="nombre-producto">Pastel Palette</h3>
+                            <div class="card-content-producto">
+                                    <h2 class="nombre-marca-producto">NATASHA DENONA</h2>
+                                    <h3 class="nombre-producto-producto">Pastel Palette</h3>
                                 </div>
                                 <hr class="separador">
 
                                 <article class="texto-descripcion">
-                                    <div class="precio-producto">
-                                        <h2 class="precio">$80.500</h2>
+                                    <div class="precio-producto-producto">
+                                        <h2 class="precio-producto">$80.500</h2>
                                         <h3 class="cantidad-cuotas">12 cuotas de $6.708</h3>
                                     </div>
 
@@ -252,25 +252,25 @@
                     </div>
 
                     <!--segunda fila-->
-                    <div class="grids">
-                        <div class="slide-content">
-                            <div class="card">
-                                <div class="image-content">
-                                    <div class="card-image">
+                    <div class="grids-producto">
+                        <div class="slide-content-producto">
+                            <div class="card-producto">
+                                <div class="image-content-producto">
+                                    <div class="card-image-producto">
                                         <img id="paleta-nars" src="../img/pag-maqullaje/paleta-nars.png"
                                             alt="Paleta de sombras NARS">
                                     </div>
                                 </div>
 
-                                <div class="card-content">
-                                    <h2 class="nombre-marca">NARS</h2>
-                                    <h3 class="nombre-producto">EUPHORIA FACE PALETTE</h3>
+                                <div class="card-content-producto">
+                                    <h2 class="nombre-marca-producto">NARS</h2>
+                                    <h3 class="nombre-producto-producto">EUPHORIA FACE PALETTE</h3>
                                 </div>
                                 <hr class="separador">
 
                                 <article class="texto-descripcion">
-                                    <div class="precio-producto">
-                                        <h2 class="precio">$30.000</h2>
+                                    <div class="precio-producto-producto">
+                                        <h2 class="precio-producto">$30.000</h2>
                                         <h3 class="cantidad-cuotas">6 cuotas de $5.000</h3>
                                     </div>
 
@@ -280,25 +280,25 @@
                         </div>
                     </div>
 
-                    <div class="grids">
-                        <div class="slide-content">
-                            <div class="card">
-                                <div class="image-content">
-                                    <div class="card-image">
+                    <div class="grids-producto">
+                        <div class="slide-content-producto">
+                            <div class="card-producto">
+                                <div class="image-content-producto">
+                                    <div class="card-image-producto">
                                         <img id="paleta-huda" src="../img/pag-maqullaje/paleta-huda.jpg"
                                             alt="Paleta de sombras Huda Beauty">
                                     </div>
                                 </div>
 
-                                <div class="card-content">
-                                    <h2 class="nombre-marca">HUDA BEAUTY</h2>
-                                    <h3 class="nombre-producto">EMPOWERED</h3>
+                                <div class="card-content-producto">
+                                    <h2 class="nombre-marca-producto">HUDA BEAUTY</h2>
+                                    <h3 class="nombre-producto-producto">EMPOWERED</h3>
                                 </div>
                                 <hr class="separador">
 
                                 <article class="texto-descripcion">
-                                    <div class="precio-producto">
-                                        <h2 class="precio">$55.500</h2>
+                                    <div class="precio-producto-producto">
+                                        <h2 class="precio-producto">$55.500</h2>
                                         <h3 class="cantidad-cuotas">6 cuotas de $9.250</h3>
                                     </div>
 
@@ -309,25 +309,25 @@
                         </div>
                     </div>
 
-                    <div class="grids">
-                        <div class="slide-content">
-                            <div class="card">
-                                <div class="image-content">
-                                    <div class="card-image">
+                    <div class="grids-producto">
+                        <div class="slide-content-producto">
+                            <div class="card-producto">
+                                <div class="image-content-producto">
+                                    <div class="card-image-producto">
                                         <img id="paleta-clarins" src="../img/pag-maqullaje/paleta-clarins.png"
                                             alt="Paleta de sombras Clarins">
                                     </div>
                                 </div>
 
-                                <div class="card-content">
-                                    <h2 class="nombre-marca">CLARINS</h2>
-                                    <h3 class="nombre-producto">OMBRE 4 COLEURS</h3>
+                                <div class="card-content-producto">
+                                    <h2 class="nombre-marca-producto">CLARINS</h2>
+                                    <h3 class="nombre-producto-producto">OMBRE 4 COLEURS</h3>
                                 </div>
                                 <hr class="separador">
 
                                 <article class="texto-descripcion">
-                                    <div class="precio-producto">
-                                        <h2 class="precio">$9.339</h2>
+                                    <div class="precio-producto-producto">
+                                        <h2 class="precio-producto">$9.339</h2>
                                         <h3 class="cantidad-cuotas">3 cuotas de $3.113</h3>
                                     </div>
 
@@ -340,26 +340,26 @@
 
 
                     <!--Tercera fila-->
-                    <div class="grids">
-                        <div class="slide-content">
-                            <div class="card">
-                                <div class="image-content">
-                                    <div class="card-image">
+                    <div class="grids-producto">
+                        <div class="slide-content-producto">
+                            <div class="card-producto">
+                                <div class="image-content-producto">
+                                    <div class="card-image-producto">
                                         <img id="sombra-clarins" src="../img/pag-maqullaje/sombra-clarins.png"
                                             alt="Sombra satinada Clarins">
                                     </div>
                                 </div>
 
-                                <div class="card-content">
+                                <div class="card-content-producto">
 
-                                    <h2 class="nombre-marca">CLARINS</h2>
-                                    <h3 class="nombre-producto">OMBRE SATIN</h3>
+                                    <h2 class="nombre-marca-producto">CLARINS</h2>
+                                    <h3 class="nombre-producto-producto">OMBRE SATIN</h3>
                                 </div>
                                 <hr class="separador">
 
                                 <article class="texto-descripcion">
-                                    <div class="precio-producto">
-                                        <h2 class="precio">$12.130</h2>
+                                    <div class="precio-producto-producto">
+                                        <h2 class="precio-producto">$12.130</h2>
                                         <h3 class="cantidad-cuotas">3 cuotas de $4.043</h3>
                                     </div>
 
@@ -369,25 +369,25 @@
                         </div>
                     </div>
 
-                    <div class="grids">
-                        <div class="slide-content">
-                            <div class="card">
-                                <div class="image-content">
-                                    <div class="card-image">
+                    <div class="grids-producto">
+                        <div class="slide-content-producto">
+                            <div class="card-producto">
+                                <div class="image-content-producto">
+                                    <div class="card-image-producto">
                                         <img id="sombra-rem" src="../img/pag-maqullaje/sombra-rem.png"
                                             alt="Sombra liquida satinada REM Beauty">
                                     </div>
                                 </div>
 
-                                <div class="card-content">
-                                    <h2 class="nombre-marca">REM BEAUTY</h2>
-                                    <h3 class="nombre-producto">MIDNIGHT SHADOW</h3>
+                                <div class="card-content-producto">
+                                    <h2 class="nombre-marca-producto">REM BEAUTY</h2>
+                                    <h3 class="nombre-producto-producto">MIDNIGHT SHADOW</h3>
                                 </div>
                                 <hr class="separador">
 
                                 <article class="texto-descripcion">
-                                    <div class="precio-producto">
-                                        <h2 class="precio">$9.490</h2>
+                                    <div class="precio-producto-producto">
+                                        <h2 class="precio-producto">$9.490</h2>
                                         <h3 class="cantidad-cuotas">3 cuotas de $3.163</h3>
                                     </div>
 
@@ -397,25 +397,25 @@
                         </div>
                     </div>
 
-                    <div class="grids">
-                        <div class="slide-content">
-                            <div class="card">
-                                <div class="image-content">
-                                    <div class="card-image">
+                    <div class="grids-producto">
+                        <div class="slide-content-producto">
+                            <div class="card-producto">
+                                <div class="image-content-producto">
+                                    <div class="card-image-producto">
                                         <img id="paleta-huda-2" src="../img/pag-maqullaje/paleta-huda-2.png"
                                             alt="Paleta de sombras Huda Beauty">
                                     </div>
                                 </div>
 
-                                <div class="card-content">
-                                    <h2 class="nombre-marca">HUDA BEAUTY</h2>
-                                    <h3 class="nombre-producto">LOVEFEST OBSESSIONS</h3>
+                                <div class="card-content-producto">
+                                    <h2 class="nombre-marca-producto">HUDA BEAUTY</h2>
+                                    <h3 class="nombre-producto-producto">LOVEFEST OBSESSIONS</h3>
                                 </div>
                                 <hr class="separador">
 
                                 <article class="texto-descripcion">
-                                    <div class="precio-producto">
-                                        <h2 class="precio">$23.570</h2>
+                                    <div class="precio-producto-producto">
+                                        <h2 class="precio-producto">$23.570</h2>
                                         <h3 class="cantidad-cuotas">6 cuotas de $3.928</h3>
                                     </div>
 
@@ -426,6 +426,7 @@
                     </div>
             </article>
         </section>
+    </div>
     </main>
 
     <!--Pagination-->

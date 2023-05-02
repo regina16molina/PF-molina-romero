@@ -1,0 +1,14 @@
+//index
+@mixin tablet {
+    @media screen and (width: 992px) {
+        
+    }
+}
+
+@mixin mobile {
+    @media screen and (width: 576px) {
+        
+    }
+}
+
+
