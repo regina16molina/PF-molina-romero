@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700&family=Montserrat:wght@100;200;300;400;700&display=swap");
-@media screen and (max-width: 576px) {
-  #head-color {
-    background-color: green;
-  }
-}
-
 .contenedor-envio {
   display: flex;
   justify-content: center;
@@ -81,6 +75,11 @@
 .iconos .contenedor-icon .cont-icon .img-logos {
   width: 28%;
 }
+@media screen and (max-width: 992px) {
+  .iconos .contenedor-icon .cont-icon .img-logos {
+    width: 40%;
+  }
+}
 
 #nav-body {
   --bs-bg-opacity: 0;
@@ -124,14 +123,18 @@
   justify-content: center;
 }
 .contenedor-info .flex .grid-1 {
-  width: 70%;
+  width: 100%;
   display: grid;
 }
-.contenedor-info .flex .grid-1 .cuotas,
-.contenedor-info .flex .grid-1 .envio,
-.contenedor-info .flex .grid-1 .metodos {
+.contenedor-info .flex .grid-1 .img-contenedor {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-info .flex .grid-1 .img-contenedor #cuotas,
+.contenedor-info .flex .grid-1 .img-contenedor #envio,
+.contenedor-info .flex .grid-1 .img-contenedor #metodos {
   object-fit: contain;
-  width: 65%;
+  width: 60%;
 }
 .contenedor-info .flex .grid-template-columns-rows-1 {
   grid-template-columns: repeat(3, 1fr);
@@ -216,6 +219,11 @@
   grid-template-rows: 2fr;
   row-gap: 30px;
 }
+@media screen and (max-width: 576px) {
+  .contenedor-grid .grid-template-columns-rows {
+    grid-template-columns: 1fr;
+  }
+}
 
 .contenedor-grid-producto {
   display: flex;
@@ -231,6 +239,11 @@
 .contenedor-grid-producto .grid-producto .grids-producto {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 576px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto {
+    width: 70%;
+  }
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto {
   width: 90%;
@@ -375,6 +388,16 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 2fr);
 }
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .column-row-producto {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedor-grid-producto .column-row-producto {
+    grid-template-columns: 1fr;
+  }
+}
 
 .flex-row {
   display: flex;
@@ -384,9 +407,14 @@
 section .cortes {
   text-align: center;
   font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.8em;
   padding-top: 30px;
+}
+@media screen and (max-width: 576px) {
+  section .cortes {
+    font-weight: 500;
+  }
 }
 section .lineas {
   border-top: 1px solid rgba(92, 90, 90, 0.493);
@@ -397,8 +425,25 @@ section .lineas {
   padding-bottom: 20px;
 }
 
+@media screen and (max-width: 576px) {
+  .caja-fotos .img-grid .container .row {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .caja-fotos .img-grid .container .row .col {
+    display: flex;
+    justify-content: center;
+  }
+}
 .caja-fotos .img-grid .container .row .col .img-info {
   width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .caja-fotos .img-grid .container .row .col .img-info {
+    width: 70%;
+    padding: 10px;
+  }
 }
 
 .caja-suscripcion {
@@ -425,10 +470,20 @@ section .lineas {
   font-weight: 700;
   font-size: 2.5em;
 }
+@media screen and (max-width: 576px) {
+  .caja-suscripcion .cont-suscripcion .texto-suscripcion h1 {
+    font-size: 1.5em;
+  }
+}
 .caja-suscripcion .cont-suscripcion .texto-suscripcion h2 {
   font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
+}
+@media screen and (max-width: 576px) {
+  .caja-suscripcion .cont-suscripcion .texto-suscripcion h2 {
+    font-size: 1.2em;
+  }
 }
 .caja-suscripcion .cont-suscripcion .form-suscripcion {
   width: 40%;
@@ -438,6 +493,11 @@ section .lineas {
 .caja-suscripcion .cont-suscripcion .form-suscripcion .suscripcion .row-form {
   display: flex;
   flex-direction: row;
+}
+@media screen and (max-width: 576px) {
+  .caja-suscripcion .cont-suscripcion .form-suscripcion .suscripcion .row-form {
+    flex-direction: column;
+  }
 }
 .caja-suscripcion .cont-suscripcion .form-suscripcion .suscripcion .row-form .mb-3 #exampleInputName1 {
   width: 70%;
@@ -462,31 +522,49 @@ section .lineas {
   --bs-btn-disabled-bg: #D996A7;
   --bs-btn-disabled-border-color: #D996A7;
 }
+@media screen and (max-width: 576px) {
+  .caja-suscripcion .cont-suscripcion .form-suscripcion .suscripcion #btn-primary {
+    width: 50%;
+  }
+}
 
 .menu-vertical {
   padding-top: 30px;
   width: 18%;
 }
-.menu-vertical .side-bar .list-side-bar {
-  list-style: none;
+@media screen and (max-width: 992px) {
+  .menu-vertical {
+    width: 22%;
+  }
 }
-.menu-vertical .side-bar .list-side-bar .categoria a {
+@media screen and (max-width: 576px) {
+  .menu-vertical {
+    width: 30%;
+  }
+}
+.menu-vertical .side-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 16px;
+}
+.menu-vertical .side-bar ul li:hover ul {
+  height: auto;
+}
+.menu-vertical .side-bar ul ul {
+  height: 0px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.menu-vertical .side-bar ul a {
   box-sizing: border-box;
-  font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   color: black;
   display: block;
   width: 100%;
   text-decoration: none;
-}
-.menu-vertical .side-bar .list-side-bar .categoria .submenu {
-  height: 0px;
-  overflow: hidden;
-  padding: 0;
-}
-.menu-vertical .side-bar .list-side-bar .categoria .submenu li:hover a {
-  height: auto;
-  overflow: hidden;
 }
 
 .div-header .cortes-pagina {
@@ -496,6 +574,30 @@ section .lineas {
   font-size: 2em;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.white {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+.white .error h1 {
+  color: rgb(224, 224, 224);
+  font-size: 18em;
+}
+
+.grey {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(224, 224, 224);
+  height: 200px;
+}
+.grey .align .txt {
+  text-align: center;
+  color: rgb(145, 144, 144);
+}
+.grey .align .btn-secondary {
+  width: 30%;
 }
 
 .caja-footer {

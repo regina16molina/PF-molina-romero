@@ -5,9 +5,13 @@ section {
     .cortes {
         text-align: center;
         font-family: $mainFont;
-        font-weight: $fontBold;
+        font-weight: $fontRegular;
         font-size: $textXlg;
         padding-top: 30px;
+    
+        @include mobile {
+            font-weight: $fontRegular;
+        }
     }
 
     .lineas {
@@ -24,9 +28,19 @@ section {
     .img-grid {
         .container {
             .row {
+                @include mobile {
+                    flex-direction: column;
+                }
                 .col {
+                    @include mobile{
+                        @include flex-center;
+                    }
                     .img-info {
                         width: 100%;
+                        @include mobile {
+                            width: 70%;
+                            padding: 10px;
+                        }
                     }
                 }
             }
@@ -55,12 +69,18 @@ section {
                 font-family: $mainFont;
                 font-weight: $fontBold;
                 font-size: $textXl;
+                @include mobile {
+                    font-size: $textLlg;
+                }
             }
 
             h2 {
                 font-family: $mainFont;
                 font-weight: $fontLight;
                 font-size: $textLlg;
+                @include mobile {
+                    font-size: $textLg;
+                }
             }
         }
 
@@ -72,6 +92,9 @@ section {
             .suscripcion {
                 .row-form {
                     @include flex-row;
+                    @include mobile{
+                        flex-direction: column;
+                    }
 
                     .mb-3 {
                         #exampleInputName1 {
@@ -81,6 +104,8 @@ section {
                         #exampleInputEmail1 {
                             width: 70%;
                         }
+
+
                     }
                 }
 
@@ -100,6 +125,10 @@ section {
                     --bs-btn-disabled-color: #fff;
                     --bs-btn-disabled-bg: #D996A7;
                     --bs-btn-disabled-border-color: #D996A7;
+
+                    @include mobile {
+                        width: 50%;
+                    }
                 }
             }
         }
@@ -107,48 +136,90 @@ section {
 }
 
 //side menu vertical
-.menu-vertical{
+.menu-vertical {
     padding-top: 30px;
     width: 18%;
 
-    .side-bar{
-        .list-side-bar{
-            list-style: none;
-            .categoria{
-            
-                a{
-                    box-sizing: border-box;
-                    font-family: $mainFont;
-                    font-size: $textLg;
-                    color: $keyColor;
-                    display: block;
-                    width: 100%;
-                    text-decoration: none;
-                }
-                .submenu{
-                    height: 0px;
-                    overflow: hidden;
-                    padding: 0;
-                        li{
-                            &:hover a{
-                                height: auto;
-                                overflow: hidden;
-                            }
-                        }
-                }
+    @include tablet {
+        width: 22%;
+    }
 
+    @include mobile {
+        width: 30%;
+    }
+
+    .side-bar {
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            line-height: 16px;
+            li{
+                
+                &:hover ul{
+                    height: auto;
+                }
+            }
+            ul{
+                height: 0px;
+                overflow: hidden;
+                transition: 0.4s;
+            }
+            a{
+                box-sizing: border-box;
+                font-family: 'League Spartan', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2em;
+                color: black;
+                display: block;
+                width: 100%;
+                text-decoration: none;
             }
         }
     }
 }
 
-.div-header{
-    .cortes-pagina{
+.div-header {
+    .cortes-pagina {
         text-align: center;
         font-family: $mainFont;
-        font-weight: 500;
+        font-weight: $fontRegular;
         font-size: 2em;
         margin-top: 15px;
         margin-bottom: 15px;
     }
+}
+
+//pagina error
+.white {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+
+    .error {
+        h1 {
+
+            color: rgb(224, 224, 224);
+            font-size: 18em;
+        }
+    }
+}
+
+.grey {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(224, 224, 224);
+    height: 200px;
+
+    .align{
+        .txt{
+            text-align: center;
+            color: rgb(145, 144, 144);
+        }
+    
+        .btn-secondary{
+            width: 30%;
+        }
+    }
+
 }

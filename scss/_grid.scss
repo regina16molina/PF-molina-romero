@@ -6,15 +6,19 @@
         @include flex-center;
 
         .grid-1 {
-            width: 70%;
+            width: 100%;
             display: grid;
 
-            .cuotas,
-            .envio,
-            .metodos {
-                object-fit: contain;
-                width: 65%;
+            .img-contenedor{
+                @include flex-center;
+                #cuotas,
+                #envio,
+                #metodos {
+                    object-fit: contain;
+                    width: 60%;
+                }
             }
+
         }
 
         .grid-template-columns-rows-1 {
@@ -113,6 +117,10 @@
         grid-template-columns: repeat(3, 0.5fr);
         grid-template-rows: 2fr;
         row-gap: 30px;
+
+        @include mobile{
+            grid-template-columns: 1fr;
+        }
     }
 }
 
@@ -131,6 +139,9 @@
             @include flex-center;
 
             .slide-content-producto {
+                @include mobile{
+                    width: 70%;
+                }
                 .card-producto {
                     width: 90%;
                     border-radius: 2%;
@@ -310,5 +321,13 @@
     .column-row-producto {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 2fr);
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile{
+            grid-template-columns: 1fr;
+        }
     }
 }

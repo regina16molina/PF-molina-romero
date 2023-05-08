@@ -35,7 +35,6 @@
             .d-flex {
                 width: 100%;
 
-
                 #barra {
                     border: black 1px solid;
                 }
@@ -77,6 +76,9 @@
 
             .img-logos {
                 width: 28%;
+                @include tablet {
+                    width: 40%;
+                }
             }
         }
     }

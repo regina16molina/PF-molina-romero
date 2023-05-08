@@ -8,34 +8,16 @@
     flex-direction: row;
 }
 
-@mixin media ($breakpoint){
-    @if $breakpoint == mobile {
-        @media screen and (max-width: 576px){
-            @content;
-        }
+@mixin tablet{
+    @media screen and (max-width: 992px){
+        @content;
+        
+    } 
+}
 
-    @if $breakpoint == tablet {
-        @media screen and (max-width: 992px){
-            @content;
-        }
-        @if $breakpoint == desktop {
-            @media screen and (max-width: 1200px) {
-                @content;
-            }
-        }
-    }
+@mixin mobile {
+    @media screen and (max-width: 576px) {
+        @content;
+        
     }
 }
-
-#head-color{
-    @include media(mobile){
-        background-color: green;
-}
-}
-
-.contenedor-envio .header-envio{
-    @include media(tablet){
-        color: green;
-    }
-}
-
