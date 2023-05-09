@@ -8,9 +8,8 @@
         .grid-1 {
             width: 100%;
             display: grid;
-            .img-contenedor {
-                @include flex-center;
-         .img-contenedor{
+
+            .img-contenedor{
                 @include flex-center;
                 #cuotas,
                 #envio,
@@ -119,17 +118,14 @@
         grid-template-rows: 2fr;
         row-gap: 30px;
 
-        @include mobile {
-
         @include mobile{
- 
             grid-template-columns: 1fr;
         }
     }
 }
 
 //Grid I productos
-.contenedor-grid-producto{ 
+.contenedor-grid-producto {
     @include flex-center;
     align-items: center;
     padding-top: 30px;
@@ -143,15 +139,9 @@
             @include flex-center;
 
             .slide-content-producto {
-                @include mobile {
-                    width: 70%;
-                }
-
-
                 @include mobile{
                     width: 70%;
                 }
- 
                 .card-producto {
                     width: 90%;
                     border-radius: 2%;
@@ -174,11 +164,7 @@
                             }
 
                             #labial-nyx-2 {
-
-                                width: 58%;
-
                                 width: 51%;
-
                             }
 
                             #gloss-maybelline {
@@ -197,9 +183,6 @@
                                 padding-top: 15px;
                             }
 
- 
-                            #aceite-ordinary {
-
                             #aceite-ordinary{
                                 width: 65%;
                             }
@@ -211,11 +194,7 @@
                                 width: 55%;
                             }
 
-
-                            #garnier-agua {
-
                             #garnier-agua{
- 
                                 width: 60%;
                             }
 
@@ -225,40 +204,22 @@
 
                             #mac-iluminador,
                             #mac-mascara,
-
-                            #mac-labial{
-                                width: 50%;
-                            }
-
-                            #mac-mascara-2{
-                                width: 52%;
-                            }
-
                             #mac-labial,
                             #mac-mascara-2 {
                                 width: 50%;
                             }
 
- 
                             #mac-labial-2,
                             #mac-corrector {
                                 width: 56%;
                             }
 
                             #mac-rubor {
- 
-                                width: 55%;
-                            }
-
-                            #mascara-maybelline-waterproof {
-                                width: 60%;
-
                                 width: 57%;
                             }
 
                             #mascara-maybelline-waterproof {
                                 width: 58%;
- 
                             }
 
                             #mac-polvo {
@@ -271,37 +232,6 @@
                             #paleta-clarins,
                             #sombra-clarins,
                             #sombra-rem,
- 
-                            #paleta-huda-2,
-                            #paleta-anastasia,
-                            #base-guerlain,
-                            #mist-rare,
-                            #corrector-tarte,
-                            #polvo-huda,
-                            #spray-too-faced,
-                            #rubor-too-faced {
-                                width: 50%;
-                            }
-                            #stick-fenty,  #iluminador-rare{
-                                width: 50%;
-                                @include tablet {
-                                    width: 45%;
-                                }
-                            }
-
-
-                            #paleta-huda {
-                                width: 83%;
-                            }
-
-
-
-                            #rubor-benefit {
-                                width: 46%;
-                            }
-
-
-
                             #paleta-huda-2 {
                                 width: 50%;
                             }
@@ -325,7 +255,6 @@
                                 #rubor-benefit, #stick-fenty, #iluminador-rare{
                                     width: 44%;
                                 }
- 
 
                         }
                     }
@@ -401,8 +330,4 @@
             grid-template-columns: 1fr;
         }
     }
-}
-    }
-}
-}
 }

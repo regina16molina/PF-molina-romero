@@ -133,7 +133,8 @@
 .contenedor-info .flex .grid-1 .img-contenedor #cuotas,
 .contenedor-info .flex .grid-1 .img-contenedor #envio,
 .contenedor-info .flex .grid-1 .img-contenedor #metodos {
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 60%;
 }
 .contenedor-info .flex .grid-template-columns-rows-1 {
@@ -161,7 +162,6 @@
   height: 500px;
   border-radius: 2%;
   background-color: white;
-  -webkit-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
 }
 .contenedor-grid .grid .grids .slide-content .card .image-content {
@@ -175,7 +175,8 @@
 }
 .contenedor-grid .grid .grids .slide-content .card .image-content .card-image .foto-producto {
   padding-top: 25px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 50%;
 }
 .contenedor-grid .grid .grids .slide-content .card .card-content {
@@ -699,6 +700,4 @@ section .lineas {
 }
 .caja-footer .box-footer .contacto ul {
   list-style: none;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

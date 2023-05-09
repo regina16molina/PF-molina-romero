@@ -11,20 +11,6 @@
     flex-direction: column-reverse;
     align-content: center;
     color: $mainColor;
-
-    ul{
-        li{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            a{
-                text-decoration: none;
-                color: rgb(110, 110, 110);
-            }
-        }
-    }
-
-
     .nav-item{
         padding-right: 80px;
         font-family: $mainFont;
