@@ -1,0 +1,343 @@
+//Grid I index
+.contenedor-info {
+    background-color: #03658C;
+
+    .flex {
+        @include flex-center;
+
+        .grid-1 {
+            width: 100%;
+            display: grid;
+
+            .img-contenedor {
+                @include flex-center;
+
+                #cuotas,
+                #envio,
+                #metodos {
+                    object-fit: contain;
+                    width: 60%;
+                }
+            }
+
+        }
+
+        .grid-template-columns-rows-1 {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+        }
+
+    }
+}
+
+//Grid II y III index
+.contenedor-grid {
+    @include flex-center;
+    align-items: center;
+    width: 10 0%;
+    padding-left: 40px;
+
+    .grid {
+        display: grid;
+        width: 90%;
+
+        .grids {
+            @include flex-center;
+
+            .slide-content {
+                .card {
+                    width: 90%;
+                    height: 500px;
+                    border-radius: 2%;
+                    background-color: white;
+                    -webkit-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
+                    box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
+
+                    .image-content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .card-image {
+                            @include flex-center;
+
+                            .foto-producto {
+                                padding-top: 25px;
+                                object-fit: contain;
+                                width: 50%;
+                            }
+                        }
+                    }
+
+                    .card-content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .nombre-marca {
+                            color: black;
+                            font-family: 'League Spartan', sans-serif;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+                            font-size: 1.2em;
+                        }
+
+                        .nombre-producto {
+                            color: black;
+                            font-family: 'League Spartan', sans-serif;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 400;
+                            font-size: 1.2em;
+                            text-align: center;
+                        }
+                    }
+
+                    .texto-descripcion {
+                        @include flex-center;
+                        width: 100%;
+
+                        .descripcion {
+                            width: 85%;
+
+                            .descripcion-producto {
+                                color: black;
+                                font-family: 'League Spartan', sans-serif;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 500;
+                                font-size: 0.9em;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .grid-template-columns-rows {
+        grid-template-columns: repeat(3, 0.5fr);
+        grid-template-rows: 2fr;
+        row-gap: 30px;
+
+        @include mobile {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+//Grid I productos
+.contenedor-grid-producto {
+    @include flex-center;
+    align-items: center;
+    padding-top: 30px;
+    width: 80%;
+
+    .grid-producto {
+        display: grid;
+        row-gap: 40px;
+
+        .grids-producto {
+            @include flex-center;
+
+            .slide-content-producto {
+                @include mobile {
+                    width: 70%;
+                }
+
+                .card-producto {
+                    width: 90%;
+                    border-radius: 2%;
+                    background-color: white;
+                    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.56);
+                    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.56);
+                    -moz-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.56);
+                    ;
+
+                    .image-content-producto {
+                        width: 100%;
+
+                        .card-image-producto {
+                            @include flex-center;
+
+                            #labial-nyx,
+                            #labial-mac,
+                            #labial-lancome {
+                                width: 57%;
+                            }
+
+                            #labial-nyx-2 {
+                                width: 58%;
+                            }
+
+                            #gloss-maybelline {
+                                width: 55%;
+                            }
+
+                            #lipglass,
+                            #labial-mac-2 {
+                                width: 61%;
+                            }
+
+                            #serum-ordinary,
+                            #hidratante-ordinary {
+                                width: 50%;
+                                padding-bottom: 15px;
+                                padding-top: 15px;
+                            }
+
+                            #aceite-ordinary {
+                                width: 65%;
+                            }
+
+                            #eye-khiels,
+                            #acf-protector,
+                            #serum-ordinary-2,
+                            #corrector-eucerin {
+                                width: 55%;
+                            }
+
+                            #garnier-agua {
+                                width: 60%;
+                            }
+
+                            #limpiador-khiels {
+                                width: 49%;
+                            }
+
+                            #mac-iluminador,
+                            #mac-mascara,
+                            #mac-labial{
+                                width: 50%;
+                            }
+
+                            #mac-mascara-2{
+                                width: 52%;
+                            }
+                            #mac-labial-2,
+                            #mac-corrector {
+                                width: 56%;
+                            }
+
+                            #mac-rubor {
+                                width: 55%;
+                            }
+
+                            #mascara-maybelline-waterproof {
+                                width: 60%;
+                            }
+
+                            #mac-polvo {
+                                width: 51%;
+                            }
+
+                            #paleta-too-faced,
+                            #paleta-natasha,
+                            #paleta-nars,
+                            #paleta-clarins,
+                            #sombra-clarins,
+                            #sombra-rem,
+                            #paleta-huda-2,
+                            #paleta-anastasia,
+                            #base-guerlain,
+                            #mist-rare,
+                            #corrector-tarte,
+                            #polvo-huda,
+                            #spray-too-faced,
+                            #rubor-too-faced {
+                                width: 50%;
+                            }
+                            #stick-fenty,  #iluminador-rare{
+                                width: 50%;
+                                @include tablet {
+                                    width: 45%;
+                                }
+                            }
+
+
+                            #paleta-huda {
+                                width: 83%;
+                            }
+
+
+
+                            #rubor-benefit {
+                                width: 46%;
+                            }
+
+
+
+                        }
+                    }
+
+                    .card-content-producto {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .nombre-marca-producto {
+                            color: black;
+                            font-family: 'League Spartan', sans-serif;
+                            font-family: 'Montserrat', sans-serif;
+                            font-weight: 700;
+                            font-size: 1.2em;
+                        }
+
+                        .nombre-producto-producto {
+                            width: 90%;
+                            color: black;
+                            font-family: 'League Spartan',
+                                sans-serif;
+                            font-family: 'Montserrat',
+                                sans-serif;
+                            font-weight: 400;
+                            font-size: 16px;
+                            text-align: center;
+                        }
+                    }
+
+                    .texto-descripcion {
+                        .precio-producto-producto {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            .precio-producto {
+                                color: black;
+                                font-family: 'League Spartan', sans-serif;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 700;
+                                font-size: 20px;
+                            }
+
+                            .cantidad-cuotas {
+                                color: #f8d58a;
+                                font-family: 'League Spartan', sans-serif;
+                                font-family: 'Montserrat', sans-serif;
+                                font-weight: 700;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+
+                    .separador {
+                        border: none;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .column-row-producto {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 2fr);
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile{
+            grid-template-columns: 1fr;
+        }
+    }
+}
