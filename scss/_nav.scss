@@ -11,6 +11,7 @@
     flex-direction: column-reverse;
     align-content: center;
     color: $mainColor;
+
     ul{
         li{
             display: flex;
@@ -22,6 +23,8 @@
             }
         }
     }
+
+
     .nav-item{
         padding-right: 80px;
         font-family: $mainFont;
