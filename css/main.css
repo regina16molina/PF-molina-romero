@@ -260,6 +260,38 @@
   display: flex;
   justify-content: center;
 }
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #lancome,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #gel-avena,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #cerave,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #cetaphil,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #neutrogena,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #acf-limpiador,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #roche {
+  width: 55%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #loreal-limpador,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #vichy {
+  width: 50%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #eucerin-s,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #loreal-s {
+  width: 50%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #ruby {
+  width: 53%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #garnier-s {
+  width: 54%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #neutrogena-s {
+  width: 56%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #serum-bio,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #veganis,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #cetaphil-s,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #kalo {
+  width: 60%;
+}
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-nyx,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-mac,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-lancome {
@@ -275,28 +307,6 @@
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-mac-2 {
   width: 61%;
 }
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #serum-ordinary,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #hidratante-ordinary {
-  width: 50%;
-  padding-bottom: 15px;
-  padding-top: 15px;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #aceite-ordinary {
-  width: 65%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #eye-khiels,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #acf-protector,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #serum-ordinary-2,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #corrector-eucerin {
-  width: 55%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #garnier-agua {
-  width: 60%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #limpiador-khiels {
-  width: 49%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-iluminador,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-mascara,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-labial,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-mascara-2 {
@@ -528,9 +538,25 @@ section .lineas {
   }
 }
 
+.ruta-exploracion {
+  display: flex;
+  flex-direction: row;
+  padding-left: 40px;
+}
+.ruta-exploracion h1 {
+  font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+}
+.ruta-exploracion h2 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
 .menu-vertical {
   padding-top: 30px;
   width: 18%;
+  padding-left: 30px;
 }
 @media screen and (max-width: 992px) {
   .menu-vertical {
@@ -543,13 +569,14 @@ section .lineas {
   }
 }
 .menu-vertical .side-bar ul {
-  margin: 0;
+  margin: 10px;
   padding: 0;
   list-style: none;
   line-height: 16px;
 }
 .menu-vertical .side-bar ul li:hover ul {
   height: auto;
+  padding: 5px;
 }
 .menu-vertical .side-bar ul ul {
   height: 0px;

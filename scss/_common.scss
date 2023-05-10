@@ -135,10 +135,26 @@ section {
     }
 }
 
+//Ruta exploracion
+.ruta-exploracion{
+    @include flex-row;
+    padding-left: 40px;
+    h1{
+        font-family: $mainFont;
+        font-size: $textMd;
+        font-weight: $fontLight;
+    }
+    h2{
+        font-size: $textMd;
+        font-weight: $fontLight;
+    }
+}
+
 //side menu vertical
 .menu-vertical {
     padding-top: 30px;
     width: 18%;
+    padding-left: 30px;
 
     @include tablet {
         width: 22%;
@@ -150,7 +166,7 @@ section {
 
     .side-bar {
         ul{
-            margin: 0;
+            margin: 10px;
             padding: 0;
             list-style: none;
             line-height: 16px;
@@ -158,6 +174,7 @@ section {
                 
                 &:hover ul{
                     height: auto;
+                    padding: 5px;
                 }
             }
             ul{

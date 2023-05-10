@@ -157,6 +157,45 @@
                         .card-image-producto {
                             @include flex-center;
 
+                            #lancome,
+                            #gel-avena,
+                            #cerave,
+                            #cetaphil,
+                            #neutrogena,
+                            #acf-limpiador,
+                            #roche{
+                                width: 55%;
+                            }
+
+                            #loreal-limpador,
+                            #vichy{
+                                width: 50%;
+                            }
+
+                            #eucerin-s,
+                            #loreal-s{
+                                width: 50%;
+                            }
+
+                            #ruby{
+                                width: 53%;
+                            }
+
+                            #garnier-s{
+                                width: 54%;
+                            }
+
+                            #neutrogena-s{
+                                width: 56%;
+                            }
+
+                            #serum-bio,
+                            #veganis,
+                            #cetaphil-s,
+                            #kalo{
+                                width: 60%;
+                            }
+
                             #labial-nyx,
                             #labial-mac,
                             #labial-lancome {
@@ -176,33 +215,6 @@
                                 width: 61%;
                             }
 
-                            #serum-ordinary,
-                            #hidratante-ordinary {
-                                width: 50%;
-                                padding-bottom: 15px;
-                                padding-top: 15px;
-                            }
-
-                            #aceite-ordinary{
-                                width: 65%;
-                            }
-
-                            #eye-khiels,
-                            #acf-protector,
-                            #serum-ordinary-2,
-                            #corrector-eucerin {
-                                width: 55%;
-                            }
-
-                            #garnier-agua{
-                                width: 60%;
-                            }
-
-                            #limpiador-khiels {
-                                width: 49%;
-                            }
-
-                            #mac-iluminador,
                             #mac-mascara,
                             #mac-labial,
                             #mac-mascara-2 {
