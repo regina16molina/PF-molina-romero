@@ -298,10 +298,10 @@
   width: 57%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-nyx-2 {
-  width: 51%;
+  width: 57%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #gloss-maybelline {
-  width: 55%;
+  width: 57%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #lipglass,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-mac-2 {
@@ -335,7 +335,7 @@
   width: 50%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-anastasia {
-  width: 42%;
+  width: 50%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-huda {
   width: 83%;
@@ -345,11 +345,13 @@
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #corrector-tarte,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #polvo-huda,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #spray-too-faced,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-too-faced {
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-too-faced,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #stick-fenty,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #iluminador-rare {
   width: 50%;
 }
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-benefit, .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #stick-fenty, .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #iluminador-rare {
-  width: 44%;
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-benefit {
+  width: 46%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .card-content-producto {
   display: flex;
