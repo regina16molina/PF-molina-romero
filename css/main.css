@@ -353,6 +353,23 @@
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-benefit {
   width: 46%;
 }
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #dr-jart-2,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-roche,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-eucerin,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-1,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-2 {
+  width: 55%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #dr-jart,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #pixi {
+  width: 61%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-bio {
+  width: 51%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-3 {
+  width: 53%;
+}
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .card-content-producto {
   display: flex;
   flex-direction: column;
