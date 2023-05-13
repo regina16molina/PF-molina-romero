@@ -381,6 +381,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.2em;
+  text-align: center;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .card-content-producto .nombre-producto-producto {
   width: 90%;
@@ -584,7 +585,7 @@ section .lineas {
 }
 @media screen and (max-width: 576px) {
   .menu-vertical {
-    width: 30%;
+    width: 40%;
   }
 }
 .menu-vertical .side-bar ul {
