@@ -79,6 +79,11 @@
                 @include tablet {
                     width: 40%;
                 }
+                
+                @include mobile {
+                    width: 55%;
+                }
+
             }
         }
     }

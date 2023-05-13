@@ -1,37 +1,21 @@
 //navbar
-#nav-body{
-    --bs-bg-opacity: 0;
-}
 .navbar{
-    #cont-fluid{
-        background-color: #ffffff;
-    justify-content: end;
-    .navbar-collapse{
-    display: flex;
-    flex-direction: column-reverse;
-    align-content: center;
-    color: $mainColor;
-    ul{
-        li{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            a{
-                text-decoration: none;
-                color: rgb(110, 110, 110);
+    .container-fluid{
+        .navbar-collapse{
+            justify-content: center;
+            .navbar-nav{
+                .nav-item{
+                    padding-right: 90px;
+                    .nav-link{
+                        font-family: $mainFont;
+                        font-weight: $fontBold;
+                    }
+                }
             }
         }
     }
-    .nav-item{
-        padding-right: 80px;
-        font-family: $mainFont;
-        font-weight: $fontRg;
-        text-align: center;
-    }
-    }
-    }
 }
-  
+
 //navigation paginas
 .contenedor-navigation {
     display: flex;

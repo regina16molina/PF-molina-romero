@@ -2,7 +2,7 @@
     @include flex-center;
     width: 100%;
     margin-top: 20px;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(243, 243, 243);
 
     .box-footer {
         @include flex-row;
@@ -33,6 +33,7 @@
         .links {
             width: 31%;
             padding-right: 40px;
+
             #links {
                 font-family: 'League Spartan', sans-serif;
                 font-family: 'Montserrat', sans-serif;
@@ -43,6 +44,12 @@
             ul {
                 text-align: left;
                 list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $keyColor;
+                    }
+                }
             }
         }
 
@@ -59,8 +66,13 @@
 
             ul {
                 list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $keyColor;
+                    }
+                }
             }
         }
-
     }
 }
