@@ -189,6 +189,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.2em;
+  text-align: center;
 }
 .contenedor-grid .grid .grids .slide-content .card .card-content .nombre-producto {
   color: black;
@@ -381,6 +382,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.2em;
+  text-align: center;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .card-content-producto .nombre-producto-producto {
   width: 90%;
@@ -409,6 +411,7 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  text-align: center;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .separador {
   border: none;
@@ -584,7 +587,7 @@ section .lineas {
 }
 @media screen and (max-width: 576px) {
   .menu-vertical {
-    width: 30%;
+    width: 40%;
   }
 }
 .menu-vertical .side-bar ul {
