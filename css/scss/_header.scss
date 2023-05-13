@@ -1,0 +1,91 @@
+.contenedor-envio {
+    @include flex-center;
+
+    .header-envio {
+        background-color: #BF2A2A;
+        color: white;
+        font-family: 'League Spartan', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.header {
+    .cont-header {
+        display: flex;
+        justify-content: space-between;
+
+        .logo-img {
+            @include flex-center;
+            width: 20%;
+
+            #brand {
+                width: 60%;
+            }
+        }
+
+        #search-bar {
+            @include flex-center;
+            align-items: center;
+            width: 40%;
+
+            .d-flex {
+                width: 100%;
+
+                #barra {
+                    border: black 1px solid;
+                }
+                #btn-outline-success {
+                    border: #BF2A2A 1px solid;
+                    --bs-btn-color: rgba(0, 0, 0, 0.644);
+                    --bs-btn-border-color: rgba(0, 0, 0, 0.644);
+                    ;
+                    --bs-btn-hover-color: white;
+                    --bs-btn-hover-bg: #BF2A2A;
+                    --bs-btn-hover-border-color: #BF2A2A;
+                    --bs-btn-focus-shadow-rgb: 25, 135, 84;
+                    --bs-btn-active-color: #fff;
+                    --bs-btn-active-bg: #BF2A2A;
+                    --bs-btn-active-border-color: #BF2A2A;
+                    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                    --bs-btn-disabled-color: #BF2A2A;
+                    --bs-btn-disabled-bg: transparent;
+                    --bs-btn-disabled-border-color: #BF2A2A;
+                    --bs-gradient: none;
+                }
+            }
+        }
+    }
+}
+
+.iconos {
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    width: 18%;
+
+    .contenedor-icon {
+        @include flex-row;
+        width: 90%;
+
+        .cont-icon {
+            @include flex-center;
+
+            .img-logos {
+                width: 28%;
+                @include tablet {
+                    width: 40%;
+                }
+                
+                @include mobile {
+                    width: 55%;
+                }
+
+            }
+        }
+    }
+}
+

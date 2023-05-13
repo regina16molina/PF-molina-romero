@@ -1,0 +1,78 @@
+.caja-footer {
+    @include flex-center;
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(243, 243, 243);
+
+    .box-footer {
+        @include flex-row;
+        justify-content: center;
+        width: 90%;
+        margin-top: 25px;
+
+        .nosotros {
+            width: 31%;
+            padding-right: 40px;
+
+            #nosotros {
+                font-family: 'League Spartan', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 1em;
+            }
+
+            #nosotros-texto {
+                font-family: 'League Spartan', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 500;
+                font-size: 1em;
+                text-align: left;
+            }
+        }
+
+        .links {
+            width: 31%;
+            padding-right: 40px;
+
+            #links {
+                font-family: 'League Spartan', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 1em;
+            }
+
+            ul {
+                text-align: left;
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $keyColor;
+                    }
+                }
+            }
+        }
+
+        .contacto {
+            width: 31%;
+            padding-right: 40px;
+
+            #contacto {
+                font-family: 'League Spartan', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                font-size: 1em;
+            }
+
+            ul {
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $keyColor;
+                    }
+                }
+            }
+        }
+    }
+}

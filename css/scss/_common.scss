@@ -1,0 +1,271 @@
+.flex-row{
+    @include flex-row;
+}
+section {
+    .cortes {
+        text-align: center;
+        font-family: $mainFont;
+        font-weight: $fontRegular;
+        font-size: $textXlg;
+        padding-top: 30px;
+    
+        @include mobile {
+            font-weight: $fontRegular;
+        }
+    }
+
+    .lineas {
+        border-top: 1px solid rgba(92, 90, 90, 0.493);
+        height: 2px;
+        width: 100%;
+        padding: 0;
+        margin: 10px auto 0 auto;
+        padding-bottom: 20px;
+    }
+}
+
+.caja-fotos {
+    .img-grid {
+        .container {
+            .row {
+                @include mobile {
+                    flex-direction: column;
+                }
+                .col {
+                    @include mobile{
+                        @include flex-center;
+                    }
+                    .img-info {
+                        width: 100%;
+                        @include mobile {
+                            width: 70%;
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.caja-suscripcion {
+    @include flex-center;
+    width: 100%;
+    padding-top: 30px;
+
+    .cont-suscripcion {
+        @include flex-row;
+        justify-content: space-between;
+        width: 83%;
+        padding-top: 30px;
+        background-color: $secondaryColor;
+
+        .texto-suscripcion {
+            width: 52%;
+            padding-left: 40px;
+            color: white;
+
+            h1 {
+                font-family: $mainFont;
+                font-weight: $fontBold;
+                font-size: $textXl;
+                @include mobile {
+                    font-size: $textLlg;
+                }
+            }
+
+            h2 {
+                font-family: $mainFont;
+                font-weight: $fontLight;
+                font-size: $textLlg;
+                @include mobile {
+                    font-size: $textLg;
+                }
+            }
+        }
+
+        .form-suscripcion {
+            width: 40%;
+            display: flex;
+            align-items: center;
+
+            .suscripcion {
+                .row-form {
+                    @include flex-row;
+                    @include mobile{
+                        flex-direction: column;
+                    }
+
+                    .mb-3 {
+                        #exampleInputName1 {
+                            width: 70%;
+                        }
+
+                        #exampleInputEmail1 {
+                            width: 70%;
+                        }
+
+
+                    }
+                }
+
+                #btn-primary {
+                    width: 20%;
+                    --bs-btn-color: #fff;
+                    --bs-btn-bg: #BF2A2A;
+                    --bs-btn-border-color: #BF2A2A;
+                    --bs-btn-hover-color: #fff;
+                    --bs-btn-hover-bg: #D996A7;
+                    --bs-btn-hover-border-color: #D996A7;
+                    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+                    --bs-btn-active-color: #fff;
+                    --bs-btn-active-bg: #D996A7;
+                    --bs-btn-active-border-color: #D996A7;
+                    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                    --bs-btn-disabled-color: #fff;
+                    --bs-btn-disabled-bg: #D996A7;
+                    --bs-btn-disabled-border-color: #D996A7;
+
+                    @include mobile {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Ruta exploracion
+.ruta-exploracion{
+    @include flex-row;
+    padding-left: 40px;
+    h1{
+        font-family: $mainFont;
+        font-size: $textMd;
+        font-weight: $fontLight;
+    }
+    h2{
+        font-size: $textMd;
+        font-weight: $fontLight;
+    }
+}
+
+//side menu vertical
+.menu-vertical {
+    padding-top: 30px;
+    width: 18%;
+    padding-left: 30px;
+
+    @include tablet {
+        width: 22%;
+    }
+
+    @include mobile {
+        width: 40%;
+    }
+
+    .side-bar {
+        ul{
+            margin: 10px;
+            padding: 0;
+            list-style: none;
+            line-height: 16px;
+            li{
+                
+                &:hover ul{
+                    height: auto;
+                    padding: 5px;
+                }
+            }
+            ul{
+                height: 0px;
+                overflow: hidden;
+                transition: 0.4s;
+            }
+            a{
+                box-sizing: border-box;
+                font-family: 'League Spartan', sans-serif;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.2em;
+                color: black;
+                display: block;
+                width: 100%;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.div-header {
+    .cortes-pagina {
+        text-align: center;
+        font-family: $mainFont;
+        font-weight: $fontRegular;
+        font-size: 2em;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+//pagina error
+.align{
+    display: flex;
+    justify-content: center;
+    .error{
+        display: flex;
+        flex-direction: row;
+
+        .error-pagina{
+            width: 50%;
+            object-fit: contain;
+        }
+
+        .error-1{
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 80px;
+            h1{
+                font-weight: $fontBold;
+                font-size: 5em;
+                color: $mainColor;
+                @include mobile {
+                    font-size: 3em;
+                }
+            }
+
+            h2{
+                font-weight: $fontRg;
+                font-size: $textXl;
+                color: $mainColor;
+                @include mobile {
+                    font-size: $textXlg;
+                }
+            }
+            h3{
+                font-size: $textXlg;
+                @include mobile {
+                    font-size: $textLg;
+                }
+            }
+            .btn-secondary{
+                --bs-btn-color: #fff;
+                --bs-btn-bg: #BF2A2A;
+                --bs-btn-border-color: #BF2A2A;
+                --bs-btn-hover-color: #fff;
+                --bs-btn-hover-bg: #e26565;
+                --bs-btn-hover-border-color: #e26565;
+                --bs-btn-focus-shadow-rgb: 49, 132, 253;
+                --bs-btn-active-color: #fff;
+                --bs-btn-active-bg: #e26565;
+                --bs-btn-active-border-color: #e26565;
+                --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+                --bs-btn-disabled-color: #fff;
+                --bs-btn-disabled-bg: #e26565;
+                --bs-btn-disabled-border-color: #e26565;
+
+                @include mobile{
+                    width: 50%;
+                    font-size: $textSm;
+                }
+            }
+        }
+    }
+}
