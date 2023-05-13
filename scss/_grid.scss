@@ -9,8 +9,9 @@
             width: 100%;
             display: grid;
 
-            .img-contenedor{
+            .img-contenedor {
                 @include flex-center;
+
                 #cuotas,
                 #envio,
                 #metodos {
@@ -51,9 +52,6 @@
                     background-color: white;
                     -webkit-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
                     box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
-                    @include mobile {
-                        height: 470px;
-                    }
 
                     .image-content {
                         display: flex;
@@ -82,7 +80,6 @@
                             font-family: 'Montserrat', sans-serif;
                             font-weight: 700;
                             font-size: 1.2em;
-                            text-align: center;
                         }
 
                         .nombre-producto {
@@ -122,7 +119,7 @@
         grid-template-rows: 2fr;
         row-gap: 30px;
 
-        @include mobile{
+        @include mobile {
             grid-template-columns: 1fr;
         }
     }
@@ -143,9 +140,10 @@
             @include flex-center;
 
             .slide-content-producto {
-                @include mobile{
+                @include mobile {
                     width: 70%;
                 }
+
                 .card-producto {
                     width: 90%;
                     border-radius: 2%;
@@ -161,45 +159,6 @@
                         .card-image-producto {
                             @include flex-center;
 
-                            #lancome,
-                            #gel-avena,
-                            #cerave,
-                            #cetaphil,
-                            #neutrogena,
-                            #acf-limpiador,
-                            #roche{
-                                width: 55%;
-                            }
-
-                            #loreal-limpador,
-                            #vichy{
-                                width: 50%;
-                            }
-
-                            #eucerin-s,
-                            #loreal-s{
-                                width: 50%;
-                            }
-
-                            #ruby{
-                                width: 53%;
-                            }
-
-                            #garnier-s{
-                                width: 54%;
-                            }
-
-                            #neutrogena-s{
-                                width: 56%;
-                            }
-
-                            #serum-bio,
-                            #veganis,
-                            #cetaphil-s,
-                            #kalo{
-                                width: 60%;
-                            }
-
                             #labial-nyx,
                             #labial-mac,
                             #labial-lancome {
@@ -207,11 +166,11 @@
                             }
 
                             #labial-nyx-2 {
-                                width: 57%;
+                                width: 58%;
                             }
 
                             #gloss-maybelline {
-                                width: 57%;
+                                width: 55%;
                             }
 
                             #lipglass,
@@ -219,23 +178,52 @@
                                 width: 61%;
                             }
 
+                            #serum-ordinary,
+                            #hidratante-ordinary {
+                                width: 50%;
+                                padding-bottom: 15px;
+                                padding-top: 15px;
+                            }
+
+                            #aceite-ordinary {
+                                width: 65%;
+                            }
+
+                            #eye-khiels,
+                            #acf-protector,
+                            #serum-ordinary-2,
+                            #corrector-eucerin {
+                                width: 55%;
+                            }
+
+                            #garnier-agua {
+                                width: 60%;
+                            }
+
+                            #limpiador-khiels {
+                                width: 49%;
+                            }
+
+                            #mac-iluminador,
                             #mac-mascara,
-                            #mac-labial,
-                            #mac-mascara-2 {
+                            #mac-labial{
                                 width: 50%;
                             }
 
+                            #mac-mascara-2{
+                                width: 52%;
+                            }
                             #mac-labial-2,
                             #mac-corrector {
                                 width: 56%;
                             }
 
                             #mac-rubor {
-                                width: 57%;
+                                width: 55%;
                             }
 
                             #mascara-maybelline-waterproof {
-                                width: 58%;
+                                width: 60%;
                             }
 
                             #mac-polvo {
@@ -248,53 +236,36 @@
                             #paleta-clarins,
                             #sombra-clarins,
                             #sombra-rem,
-                            #paleta-huda-2 {
+                            #paleta-huda-2,
+                            #paleta-anastasia,
+                            #base-guerlain,
+                            #mist-rare,
+                            #corrector-tarte,
+                            #polvo-huda,
+                            #spray-too-faced,
+                            #rubor-too-faced {
                                 width: 50%;
+                            }
+                            #stick-fenty,  #iluminador-rare{
+                                width: 50%;
+                                @include tablet {
+                                    width: 45%;
+                                }
                             }
 
-                            #paleta-anastasia{
-                                width: 50%;
-                            }
 
                             #paleta-huda {
                                 width: 83%;
-                                }
-                                
-                                #base-guerlain,
-                                #mist-rare,
-                                #corrector-tarte,
-                                #polvo-huda,
-                                #spray-too-faced,
-                                #rubor-too-faced,
-                                #stick-fenty,
-                                #iluminador-rare {
-                                    width: 50%;
-                                }
+                            }
 
-                                #rubor-benefit{
-                                    width: 46%;
-                                }
 
-                                #dr-jart-2,
-                                #bruma-roche,
-                                #bruma-eucerin,
-                                #idraet-1,
-                                #idraet-2 {
-                                    width: 55%;
-                                }
 
-                                #dr-jart,
-                                #pixi{
-                                    width: 61%;
-                                }
+                            #rubor-benefit {
+                                width: 46%;
+                            }
 
-                                #bruma-bio{
-                                    width: 51%;
-                                }
 
-                                #idraet-3{
-                                    width: 53%;
-                                }
+
                         }
                     }
 
@@ -309,7 +280,6 @@
                             font-family: 'Montserrat', sans-serif;
                             font-weight: 700;
                             font-size: 1.2em;
-                            text-align: center;
                         }
 
                         .nombre-producto-producto {
@@ -345,7 +315,6 @@
                                 font-family: 'Montserrat', sans-serif;
                                 font-weight: 700;
                                 font-size: 18px;
-                                text-align: center;
                             }
                         }
                     }

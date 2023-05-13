@@ -5,7 +5,7 @@ section {
     .cortes {
         text-align: center;
         font-family: $mainFont;
-        font-weight: $fontRegular;
+        font-weight: $fontBold;
         font-size: $textXlg;
         padding-top: 30px;
     
@@ -135,21 +135,6 @@ section {
     }
 }
 
-//Ruta exploracion
-.ruta-exploracion{
-    @include flex-row;
-    padding-left: 40px;
-    h1{
-        font-family: $mainFont;
-        font-size: $textMd;
-        font-weight: $fontLight;
-    }
-    h2{
-        font-size: $textMd;
-        font-weight: $fontLight;
-    }
-}
-
 //side menu vertical
 .menu-vertical {
     padding-top: 30px;
@@ -161,20 +146,18 @@ section {
     }
 
     @include mobile {
-        width: 40%;
+        width: 30%;
     }
 
     .side-bar {
         ul{
-            margin: 10px;
+            margin: 0;
             padding: 0;
             list-style: none;
-            line-height: 16px;
             li{
-                
+
                 &:hover ul{
                     height: auto;
-                    padding: 5px;
                 }
             }
             ul{
@@ -206,6 +189,7 @@ section {
         margin-bottom: 15px;
     }
 }
+
 //pagina error
 .align{
     display: flex;
@@ -214,36 +198,22 @@ section {
         display: flex;
         flex-direction: row;
 
-        .error-pagina{
-            width: 50%;
-            object-fit: contain;
-        }
-
         .error-1{
             font-family: 'Montserrat', sans-serif;
-            padding-top: 80px;
+            padding-top: 120px;
             h1{
                 font-weight: $fontBold;
                 font-size: 5em;
                 color: $mainColor;
-                @include mobile {
-                    font-size: 3em;
-                }
             }
 
             h2{
                 font-weight: $fontRg;
                 font-size: $textXl;
                 color: $mainColor;
-                @include mobile {
-                    font-size: $textXlg;
-                }
             }
             h3{
                 font-size: $textXlg;
-                @include mobile {
-                    font-size: $textLg;
-                }
             }
             .btn-secondary{
                 --bs-btn-color: #fff;
@@ -260,11 +230,6 @@ section {
                 --bs-btn-disabled-color: #fff;
                 --bs-btn-disabled-bg: #e26565;
                 --bs-btn-disabled-border-color: #e26565;
-
-                @include mobile{
-                    width: 50%;
-                    font-size: $textSm;
-                }
             }
         }
     }

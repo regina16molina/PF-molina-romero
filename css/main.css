@@ -80,21 +80,35 @@
     width: 40%;
   }
 }
-@media screen and (max-width: 576px) {
-  .iconos .contenedor-icon .cont-icon .img-logos {
-    width: 55%;
-  }
+
+#nav-body {
+  --bs-bg-opacity: 0;
 }
 
-.navbar .container-fluid .navbar-collapse {
-  justify-content: center;
+.navbar #cont-fluid {
+  background-color: #ffffff;
+  justify-content: end;
 }
-.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
-  padding-right: 90px;
+.navbar #cont-fluid .navbar-collapse {
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: center;
+  color: #BF2A2A;
 }
-.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+.navbar #cont-fluid .navbar-collapse ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar #cont-fluid .navbar-collapse ul li a {
+  text-decoration: none;
+  color: rgb(110, 110, 110);
+}
+.navbar #cont-fluid .navbar-collapse .nav-item {
+  padding-right: 80px;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
+  text-align: center;
 }
 
 .contenedor-navigation {
@@ -159,11 +173,6 @@
   -webkit-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
 }
-@media screen and (max-width: 576px) {
-  .contenedor-grid .grid .grids .slide-content .card {
-    height: 470px;
-  }
-}
 .contenedor-grid .grid .grids .slide-content .card .image-content {
   display: flex;
   flex-direction: column;
@@ -189,7 +198,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.2em;
-  text-align: center;
 }
 .contenedor-grid .grid .grids .slide-content .card .card-content .nombre-producto {
   color: black;
@@ -261,67 +269,59 @@
   display: flex;
   justify-content: center;
 }
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #lancome,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #gel-avena,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #cerave,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #cetaphil,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #neutrogena,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #acf-limpiador,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #roche {
-  width: 55%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #loreal-limpador,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #vichy {
-  width: 50%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #eucerin-s,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #loreal-s {
-  width: 50%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #ruby {
-  width: 53%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #garnier-s {
-  width: 54%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #neutrogena-s {
-  width: 56%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #serum-bio,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #veganis,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #cetaphil-s,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #kalo {
-  width: 60%;
-}
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-nyx,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-mac,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-lancome {
   width: 57%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-nyx-2 {
-  width: 57%;
+  width: 58%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #gloss-maybelline {
-  width: 57%;
+  width: 55%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #lipglass,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-mac-2 {
   width: 61%;
 }
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-mascara,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-labial,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-mascara-2 {
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #serum-ordinary,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #hidratante-ordinary {
   width: 50%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #aceite-ordinary {
+  width: 65%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #eye-khiels,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #acf-protector,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #serum-ordinary-2,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #corrector-eucerin {
+  width: 55%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #garnier-agua {
+  width: 60%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #limpiador-khiels {
+  width: 49%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-iluminador,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-mascara,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-labial {
+  width: 50%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-mascara-2 {
+  width: 52%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-labial-2,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-corrector {
   width: 56%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-rubor {
-  width: 57%;
+  width: 55%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mascara-maybelline-waterproof {
-  width: 58%;
+  width: 60%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-polvo {
   width: 51%;
@@ -332,44 +332,29 @@
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-clarins,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #sombra-clarins,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #sombra-rem,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-huda-2 {
-  width: 50%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-anastasia {
-  width: 50%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-huda {
-  width: 83%;
-}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-huda-2,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-anastasia,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #base-guerlain,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mist-rare,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #corrector-tarte,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #polvo-huda,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #spray-too-faced,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-too-faced,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #stick-fenty,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #iluminador-rare {
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-too-faced {
   width: 50%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #stick-fenty, .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #iluminador-rare {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #stick-fenty, .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #iluminador-rare {
+    width: 45%;
+  }
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-huda {
+  width: 83%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-benefit {
   width: 46%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #dr-jart-2,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-roche,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-eucerin,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-1,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-2 {
-  width: 55%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #dr-jart,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #pixi {
-  width: 61%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-bio {
-  width: 51%;
-}
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-3 {
-  width: 53%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .card-content-producto {
   display: flex;
@@ -382,7 +367,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1.2em;
-  text-align: center;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .card-content-producto .nombre-producto-producto {
   width: 90%;
@@ -411,7 +395,6 @@
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  text-align: center;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .separador {
   border: none;
@@ -439,7 +422,7 @@
 section .cortes {
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1.8em;
   padding-top: 30px;
 }
@@ -560,21 +543,6 @@ section .lineas {
   }
 }
 
-.ruta-exploracion {
-  display: flex;
-  flex-direction: row;
-  padding-left: 40px;
-}
-.ruta-exploracion h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1em;
-  font-weight: 400;
-}
-.ruta-exploracion h2 {
-  font-size: 1em;
-  font-weight: 400;
-}
-
 .menu-vertical {
   padding-top: 30px;
   width: 18%;
@@ -587,18 +555,16 @@ section .lineas {
 }
 @media screen and (max-width: 576px) {
   .menu-vertical {
-    width: 40%;
+    width: 30%;
   }
 }
 .menu-vertical .side-bar ul {
-  margin: 10px;
+  margin: 0;
   padding: 0;
   list-style: none;
-  line-height: 16px;
 }
 .menu-vertical .side-bar ul li:hover ul {
   height: auto;
-  padding: 5px;
 }
 .menu-vertical .side-bar ul ul {
   height: 0px;
@@ -633,41 +599,22 @@ section .lineas {
   display: flex;
   flex-direction: row;
 }
-.align .error .error-pagina {
-  width: 50%;
-  object-fit: contain;
-}
 .align .error .error-1 {
   font-family: "Montserrat", sans-serif;
-  padding-top: 80px;
+  padding-top: 120px;
 }
 .align .error .error-1 h1 {
   font-weight: 700;
   font-size: 5em;
   color: #BF2A2A;
 }
-@media screen and (max-width: 576px) {
-  .align .error .error-1 h1 {
-    font-size: 3em;
-  }
-}
 .align .error .error-1 h2 {
   font-weight: 600;
   font-size: 2.5em;
   color: #BF2A2A;
 }
-@media screen and (max-width: 576px) {
-  .align .error .error-1 h2 {
-    font-size: 1.8em;
-  }
-}
 .align .error .error-1 h3 {
   font-size: 1.8em;
-}
-@media screen and (max-width: 576px) {
-  .align .error .error-1 h3 {
-    font-size: 1.2em;
-  }
 }
 .align .error .error-1 .btn-secondary {
   --bs-btn-color: #fff;
@@ -685,19 +632,13 @@ section .lineas {
   --bs-btn-disabled-bg: #e26565;
   --bs-btn-disabled-border-color: #e26565;
 }
-@media screen and (max-width: 576px) {
-  .align .error .error-1 .btn-secondary {
-    width: 50%;
-    font-size: 0.8em;
-  }
-}
 
 .caja-footer {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 20px;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(212, 212, 212);
 }
 .caja-footer .box-footer {
   display: flex;
@@ -737,10 +678,6 @@ section .lineas {
   text-align: left;
   list-style: none;
 }
-.caja-footer .box-footer .links ul li a {
-  text-decoration: none;
-  color: black;
-}
 .caja-footer .box-footer .contacto {
   width: 31%;
   padding-right: 40px;
@@ -753,10 +690,6 @@ section .lineas {
 }
 .caja-footer .box-footer .contacto ul {
   list-style: none;
-}
-.caja-footer .box-footer .contacto ul li a {
-  text-decoration: none;
-  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
