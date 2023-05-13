@@ -81,25 +81,15 @@
   }
 }
 
-#nav-body {
-  --bs-bg-opacity: 0;
+.navbar .container-fluid .navbar-collapse {
+  justify-content: center;
 }
-
-.navbar #cont-fluid {
-  background-color: #ffffff;
-  justify-content: end;
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item {
+  padding-right: 90px;
 }
-.navbar #cont-fluid .navbar-collapse {
-  display: flex;
-  flex-direction: column-reverse;
-  align-content: center;
-  color: #BF2A2A;
-}
-.navbar #cont-fluid .navbar-collapse .nav-item {
-  padding-right: 80px;
-  font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
-  font-weight: 600;
-  text-align: center;
+.navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .contenedor-navigation {
@@ -435,7 +425,7 @@
 
 section .cortes {
   text-align: center;
-  font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1.8em;
   padding-top: 30px;
@@ -495,7 +485,7 @@ section .lineas {
   color: white;
 }
 .caja-suscripcion .cont-suscripcion .texto-suscripcion h1 {
-  font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2.5em;
 }
@@ -505,7 +495,7 @@ section .lineas {
   }
 }
 .caja-suscripcion .cont-suscripcion .texto-suscripcion h2 {
-  font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.5em;
 }
@@ -563,7 +553,7 @@ section .lineas {
   padding-left: 40px;
 }
 .ruta-exploracion h1 {
-  font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 400;
 }
@@ -615,7 +605,7 @@ section .lineas {
 
 .div-header .cortes-pagina {
   text-align: center;
-  font-family: "League Spartan", sans-serif "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 2em;
   margin-top: 15px;
