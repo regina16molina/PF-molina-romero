@@ -206,41 +206,6 @@ section {
         margin-bottom: 15px;
     }
 }
-
-//pagina error
-.white {
-    height: 300px;
-    display: flex;
-    justify-content: center;
-
-    .error {
-        h1 {
-
-            color: rgb(224, 224, 224);
-            font-size: 18em;
-        }
-    }
-}
-
-.grey {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(224, 224, 224);
-    height: 200px;
-
-    .align{
-        .txt{
-            text-align: center;
-            color: rgb(145, 144, 144);
-        }
-    
-        .btn-secondary{
-            width: 30%;
-        }
-    }
-
-}
-
 //pagina error
 .align{
     display: flex;
@@ -249,22 +214,36 @@ section {
         display: flex;
         flex-direction: row;
 
+        .error-pagina{
+            width: 50%;
+            object-fit: contain;
+        }
+
         .error-1{
             font-family: 'Montserrat', sans-serif;
-            padding-top: 120px;
+            padding-top: 80px;
             h1{
                 font-weight: $fontBold;
                 font-size: 5em;
                 color: $mainColor;
+                @include mobile {
+                    font-size: 3em;
+                }
             }
 
             h2{
                 font-weight: $fontRg;
                 font-size: $textXl;
                 color: $mainColor;
+                @include mobile {
+                    font-size: $textXlg;
+                }
             }
             h3{
                 font-size: $textXlg;
+                @include mobile {
+                    font-size: $textLg;
+                }
             }
             .btn-secondary{
                 --bs-btn-color: #fff;
@@ -281,6 +260,11 @@ section {
                 --bs-btn-disabled-color: #fff;
                 --bs-btn-disabled-bg: #e26565;
                 --bs-btn-disabled-border-color: #e26565;
+
+                @include mobile{
+                    width: 50%;
+                    font-size: $textSm;
+                }
             }
         }
     }
