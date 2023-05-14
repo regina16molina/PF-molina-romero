@@ -166,7 +166,7 @@
 }
 @media screen and (max-width: 992px) {
   .contenedor-grid .grid .grids .slide-content .card {
-    height: 415px;
+    height: 450px;
     width: 95%;
   }
 }
@@ -635,7 +635,7 @@ section .lineas {
   width: 70%;
 }
 .caja-suscripcion .cont-suscripcion .form-suscripcion .suscripcion #btn-primary {
-  width: 20%;
+  width: 28%;
   --bs-btn-color: #fff;
   --bs-btn-bg: #BF2A2A;
   --bs-btn-border-color: #BF2A2A;
