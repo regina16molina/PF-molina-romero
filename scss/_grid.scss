@@ -60,6 +60,9 @@
                         width: 95%;
                     }
 
+                    @include mobile {
+                        height: 420px;
+                    }
                     .image-content {
                         display: flex;
                         flex-direction: column;
@@ -145,6 +148,10 @@
     align-items: center;
     padding-top: 30px;
     width: 80%;
+    @include mobile{
+        width: 100%;
+        padding-top: 10px;
+    }
 
     .grid-producto {
         display: grid;
@@ -155,7 +162,7 @@
 
             .slide-content-producto {
                 @include mobile{
-                    width: 70%;
+                    width: 80%;
                 }
                 .card-producto {
                     width: 90%;
@@ -171,7 +178,7 @@
 
                         .card-image-producto {
                             @include flex-center;
-
+                            padding: 10px;
                             #lancome,
                             #gel-avena,
                             #cerave,
@@ -446,7 +453,7 @@
         }
 
         @include mobile{
-            grid-template-columns: 1fr;
+            grid-template-columns: 2fr;
         }
     }
 }

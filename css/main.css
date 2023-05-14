@@ -24,7 +24,8 @@
   width: 20%;
 }
 .header .cont-header .logo-img #brand {
-  width: 60%;
+  width: 80%;
+  padding-left: 30px;
 }
 .header .cont-header #search-bar {
   display: flex;
@@ -32,8 +33,20 @@
   align-items: center;
   width: 40%;
 }
+@media screen and (max-width: 576px) {
+  .header .cont-header #search-bar .form-control {
+    height: 30px;
+  }
+}
 .header .cont-header #search-bar .d-flex {
   width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .header .cont-header #search-bar .d-flex .btn {
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
 }
 .header .cont-header #search-bar .d-flex #barra {
   border: black 1px solid;
@@ -170,6 +183,11 @@
     width: 95%;
   }
 }
+@media screen and (max-width: 576px) {
+  .contenedor-grid .grid .grids .slide-content .card {
+    height: 420px;
+  }
+}
 .contenedor-grid .grid .grids .slide-content .card .image-content {
   display: flex;
   flex-direction: column;
@@ -248,6 +266,12 @@
   padding-top: 30px;
   width: 80%;
 }
+@media screen and (max-width: 576px) {
+  .contenedor-grid-producto {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
 .contenedor-grid-producto .grid-producto {
   display: grid;
   row-gap: 40px;
@@ -258,7 +282,7 @@
 }
 @media screen and (max-width: 576px) {
   .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto {
-    width: 70%;
+    width: 80%;
   }
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto {
@@ -275,6 +299,7 @@
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #lancome,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #gel-avena,
@@ -523,7 +548,7 @@
 }
 @media screen and (max-width: 576px) {
   .contenedor-grid-producto .column-row-producto {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
   }
 }
 
@@ -543,6 +568,7 @@ section .cortes {
   section .cortes {
     font-weight: 500;
     font-size: 1.2em;
+    padding-top: 10px;
   }
 }
 section .lineas {
@@ -662,10 +688,19 @@ section .lineas {
   flex-direction: row;
   padding-left: 40px;
 }
+@media screen and (max-width: 576px) {
+  .ruta-exploracion {
+    padding-left: 30px;
+  }
+}
 .ruta-exploracion h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 400;
+}
+.ruta-exploracion h1 a {
+  text-decoration: none;
+  color: black;
 }
 .ruta-exploracion h2 {
   font-size: 1em;
@@ -679,13 +714,14 @@ section .lineas {
 }
 @media screen and (max-width: 992px) {
   .menu-vertical {
-    width: 28%;
+    width: 32%;
     padding-left: 20px;
   }
 }
 @media screen and (max-width: 576px) {
   .menu-vertical {
-    width: 40%;
+    width: 48%;
+    padding-top: 10px;
   }
 }
 .menu-vertical .side-bar ul {
@@ -712,6 +748,11 @@ section .lineas {
   display: block;
   width: 100%;
   text-decoration: none;
+}
+@media screen and (max-width: 576px) {
+  .menu-vertical .side-bar ul a {
+    font-size: 1em;
+  }
 }
 
 .div-header .cortes-pagina {

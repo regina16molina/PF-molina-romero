@@ -12,6 +12,7 @@ section {
         @include mobile {
             font-weight: $fontRegular;
             font-size: $textLg;
+            padding-top: 10px;
         }
     }
 
@@ -140,10 +141,17 @@ section {
 .ruta-exploracion{
     @include flex-row;
     padding-left: 40px;
+    @include mobile {
+        padding-left: 30px;
+    }
     h1{
         font-family: $mainFont;
         font-size: $textMd;
         font-weight: $fontLight;
+        a{
+            text-decoration: none;
+            color: $keyColor;
+        }
     }
     h2{
         font-size: $textMd;
@@ -158,12 +166,13 @@ section {
     padding-left: 30px;
 
     @include tablet {
-        width: 28%;
+        width: 32%;
         padding-left: 20px;
     }
 
     @include mobile {
-        width: 40%;
+        width: 48%;
+        padding-top: 10px;
     }
 
     .side-bar {
@@ -188,11 +197,14 @@ section {
                 box-sizing: border-box;
                 font-family: 'League Spartan', sans-serif;
                 font-family: 'Montserrat', sans-serif;
-                font-size: 1.2em;
+                font-size: $textLg;
                 color: black;
                 display: block;
                 width: 100%;
                 text-decoration: none;
+                @include mobile {
+                    font-size: $textMd;
+                }
             }
         }
     }
