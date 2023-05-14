@@ -11,6 +11,7 @@ section {
     
         @include mobile {
             font-weight: $fontRegular;
+            font-size: $textLg;
         }
     }
 
@@ -157,7 +158,8 @@ section {
     padding-left: 30px;
 
     @include tablet {
-        width: 22%;
+        width: 28%;
+        padding-left: 20px;
     }
 
     @include mobile {

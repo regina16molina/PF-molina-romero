@@ -140,12 +140,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10 0%;
+  width: 100%;
   padding-left: 40px;
 }
 .contenedor-grid .grid {
   display: grid;
   width: 90%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid .grid {
+    width: 100%;
+  }
 }
 .contenedor-grid .grid .grids {
   display: flex;
@@ -159,9 +164,10 @@
   -webkit-box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 0px 12px -7px rgba(0, 0, 0, 0.45);
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
   .contenedor-grid .grid .grids .slide-content .card {
-    height: 470px;
+    height: 415px;
+    width: 95%;
   }
 }
 .contenedor-grid .grid .grids .slide-content .card .image-content {
@@ -177,6 +183,11 @@
   padding-top: 25px;
   object-fit: contain;
   width: 50%;
+}
+@media screen and (max-width: 576px) {
+  .contenedor-grid .grid .grids .slide-content .card .image-content .card-image .foto-producto {
+    width: 35%;
+  }
 }
 .contenedor-grid .grid .grids .slide-content .card .card-content {
   display: flex;
@@ -198,6 +209,11 @@
   font-size: 1.2em;
   text-align: center;
 }
+@media screen and (max-width: 992px) {
+  .contenedor-grid .grid .grids .slide-content .card .card-content .nombre-producto {
+    font-size: 1em;
+  }
+}
 .contenedor-grid .grid .grids .slide-content .card .texto-descripcion {
   display: flex;
   justify-content: center;
@@ -215,7 +231,7 @@
   text-align: center;
 }
 .contenedor-grid .grid-template-columns-rows {
-  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 2fr;
   row-gap: 30px;
 }
@@ -264,14 +280,28 @@
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #gel-avena,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #cerave,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #cetaphil,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #neutrogena,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #acf-limpiador,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #roche {
   width: 55%;
 }
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #loreal-limpador,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #neutrogena {
+  width: 55%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #neutrogena {
+    width: 60%;
+  }
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #loreal-limpador {
+  width: 50%;
+}
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #vichy {
   width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #vichy {
+    width: 55%;
+  }
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #eucerin-s,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #loreal-s {
@@ -292,10 +322,29 @@
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #kalo {
   width: 60%;
 }
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-nyx,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-mac,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-lancome {
   width: 57%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-lancome {
+    width: 61%;
+  }
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-mac {
+  width: 57%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-mac {
+    width: 62%;
+  }
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-nyx {
+  width: 57%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-nyx {
+    width: 63%;
+  }
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #labial-nyx-2 {
   width: 57%;
@@ -325,7 +374,6 @@
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mac-polvo {
   width: 51%;
 }
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-too-faced,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-natasha,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-nars,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-clarins,
@@ -333,6 +381,14 @@
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #sombra-rem,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-huda-2 {
   width: 50%;
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-too-faced {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-too-faced {
+    width: 56%;
+  }
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #paleta-anastasia {
   width: 50%;
@@ -342,27 +398,69 @@
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #base-guerlain,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #mist-rare,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #corrector-tarte,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #polvo-huda,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #spray-too-faced,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-too-faced,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #stick-fenty,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #iluminador-rare {
   width: 50%;
 }
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #spray-too-faced {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #spray-too-faced {
+    width: 55%;
+  }
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #polvo-huda {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #polvo-huda {
+    width: 55%;
+  }
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #corrector-tarte {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #corrector-tarte {
+    width: 52%;
+  }
+}
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #rubor-benefit {
   width: 46%;
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #dr-jart-2,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-roche,
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-eucerin,
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-1,
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-1 {
+  width: 55%;
+}
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-2 {
   width: 55%;
 }
-.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #dr-jart,
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #idraet-2 {
+    width: 60%;
+  }
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-roche {
+  width: 55%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-roche {
+    width: 61%;
+  }
+}
+.contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #dr-jart {
+  width: 61%;
+}
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #pixi {
   width: 61%;
+}
+@media screen and (max-width: 992px) {
+  .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #pixi {
+    width: 70%;
+  }
 }
 .contenedor-grid-producto .grid-producto .grids-producto .slide-content-producto .card-producto .image-content-producto .card-image-producto #bruma-bio {
   width: 51%;
@@ -444,6 +542,7 @@ section .cortes {
 @media screen and (max-width: 576px) {
   section .cortes {
     font-weight: 500;
+    font-size: 1.2em;
   }
 }
 section .lineas {
@@ -580,7 +679,8 @@ section .lineas {
 }
 @media screen and (max-width: 992px) {
   .menu-vertical {
-    width: 22%;
+    width: 28%;
+    padding-left: 20px;
   }
 }
 @media screen and (max-width: 576px) {
