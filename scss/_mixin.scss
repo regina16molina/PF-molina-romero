@@ -8,6 +8,13 @@
     flex-direction: row;
 }
 
+@mixin desktop {
+    @media screen and (max-width: 1200px) {
+        @content;
+        
+    }
+}
+
 @mixin tablet{
     @media screen and (max-width: 992px){
         @content;
@@ -19,5 +26,11 @@
     @media screen and (max-width: 576px) {
         @content;
         
+    }
+}
+
+@mixin mobile-xs {
+    @media screen and (max-width: 450px) {
+        @content;        
     }
 }

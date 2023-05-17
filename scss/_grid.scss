@@ -179,13 +179,19 @@
                         .card-image-producto {
                             @include flex-center;
                             padding: 10px;
-                            #lancome,
                             #gel-avena,
                             #cerave,
                             #cetaphil,
                             #acf-limpiador,
                             #roche{
                                 width: 55%;
+                            }
+
+                            #lancome{
+                                width: 55%;
+                                @include desktop{
+                                    width: 63%;
+                                }
                             }
 
                             #neutrogena{
@@ -197,6 +203,9 @@
 
                             #loreal-limpador{
                                 width: 50%;
+                                @include desktop{
+                                    width: 56%;
+                                }
                             }
 
                             #vichy{
@@ -204,23 +213,41 @@
                                 @include tablet {
                                     width: 55%;
                                 }
+                                @include desktop{
+                                    width: 56%;
+                                }
                             }
 
-                            #eucerin-s,
                             #loreal-s{
                                 width: 50%;
                             }
 
+                            #eucerin-s{
+                                width: 50%;
+                                @include desktop{
+                                    width: 43%;
+                                }
+                            }
+
                             #ruby{
                                 width: 53%;
+                                @include desktop{
+                                    width: 55%;
+                                }
                             }
 
                             #garnier-s{
                                 width: 54%;
+                                @include desktop{
+                                    width: 58%;
+                                }
                             }
 
                             #neutrogena-s{
                                 width: 56%;
+                                @include desktop{
+                                    width: 60%;
+                                }
                             }
 
                             #serum-bio,
@@ -237,10 +264,20 @@
                                 }
                             }
 
+                            #labial-mac-powder{
+                                width: 57%;
+                                @include desktop{
+                                    width: 58%;
+                                }
+                            }
+
                             #labial-mac{
                                 width: 57%;
                                 @include tablet{
                                     width: 62%;
+                                }
+                                @include desktop{
+                                    width: 63%;
                                 }
                             }
 
@@ -257,11 +294,20 @@
 
                             #gloss-maybelline {
                                 width: 57%;
+                                @include desktop{
+                                    width: 61%;
+                                }
                             }
 
-                            #lipglass,
                             #labial-mac-2 {
                                 width: 61%;
+                            }
+
+                            #lipglass{
+                                width: 61%;
+                                @include desktop{
+                                    width: 68%;
+                                }
                             }
 
                             #mac-mascara,
@@ -305,18 +351,39 @@
 
                             #paleta-anastasia{
                                 width: 50%;
+                                @include desktop{
+                                    width: 43%;
+                                }
                             }
 
                             #paleta-huda {
                                 width: 83%;
                                 }
                                 
-                                #base-guerlain,
                                 #mist-rare,
-                                #rubor-too-faced,
-                                #stick-fenty,
-                                #iluminador-rare {
+                                #rubor-too-faced {
                                     width: 50%;
+                                }
+
+                                #iluminador-rare{
+                                    width: 50%;
+                                    @include desktop{
+                                        width: 43%;
+                                    }
+                                }
+
+                                #stick-fenty{
+                                    width: 50%;
+                                    @include desktop{
+                                        width: 41%;
+                                    }
+                                }
+
+                                #base-guerlain{
+                                    width: 50%;
+                                    @include desktop{
+                                        width: 58%;
+                                    }
                                 }
 
                                 #spray-too-faced{
@@ -340,13 +407,19 @@
                                     }
                                 }
                                 #rubor-benefit{
-                                    width: 46%;
+                                    width: 50%;
                                 }
 
-                                #dr-jart-2,
                                 #bruma-eucerin,
                                 #idraet-1{
                                     width: 55%;
+                                }
+
+                                #dr-jart-2{
+                                    width: 55%;
+                                    @include desktop{
+                                        width: 43%;
+                                    }
                                 }
 
                                 #idraet-2 {
@@ -376,10 +449,16 @@
 
                                 #bruma-bio{
                                     width: 51%;
+                                    @include desktop{
+                                        width: 48%;
+                                    }
                                 }
 
                                 #idraet-3{
                                     width: 53%;
+                                    @include desktop{
+                                        width: 59%;
+                                    }
                                 }
                         }
                     }
