@@ -192,6 +192,9 @@ section {
             padding-top: 10px;
             padding-left: 0px;
         }
+        @include mobile-xs{
+            width: 80%;
+        }
     
         .side-bar {
             ul{
@@ -203,6 +206,9 @@ section {
                     display: flex;
                     flex-direction: row;
                 }
+                @include mobile-xs{
+                    margin: 5px;
+                }
                 li{
                     
                     &:hover ul{
@@ -213,6 +219,11 @@ section {
                         @include mobile{
                             display: flex;
                             flex-direction: column;
+                        }
+                    }
+                    a{
+                        @include mobile-xs{
+                            font-size: 0.8em;
                         }
                     }
                 }

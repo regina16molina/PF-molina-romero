@@ -859,6 +859,11 @@ section .lineas {
     padding-left: 0px;
   }
 }
+@media screen and (max-width: 450px) {
+  .flex-row .menu-vertical {
+    width: 80%;
+  }
+}
 .flex-row .menu-vertical .side-bar ul {
   margin: 10px;
   padding: 0px 20px;
@@ -871,6 +876,11 @@ section .lineas {
     flex-direction: row;
   }
 }
+@media screen and (max-width: 450px) {
+  .flex-row .menu-vertical .side-bar ul {
+    margin: 5px;
+  }
+}
 .flex-row .menu-vertical .side-bar ul li:hover ul {
   height: auto;
   padding: 5px 10px;
@@ -879,6 +889,11 @@ section .lineas {
   .flex-row .menu-vertical .side-bar ul li ul {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 450px) {
+  .flex-row .menu-vertical .side-bar ul li a {
+    font-size: 0.8em;
   }
 }
 .flex-row .menu-vertical .side-bar ul ul {
