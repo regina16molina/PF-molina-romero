@@ -207,23 +207,25 @@ section {
                     flex-direction: row;
                 }
                 @include mobile-xs{
-                    margin: 5px;
+                    margin: 10px;
                 }
                 li{
                     
                     &:hover ul{
                         height: auto;
-                        padding: 5px 10px;
+                        padding: 5px 45px 0px 0px;
                     }
                     ul{
                         @include mobile{
                             display: flex;
                             flex-direction: column;
+                            width: 100%;
                         }
                     }
                     a{
                         @include mobile-xs{
                             font-size: 0.8em;
+                            width: 100%;
                         }
                     }
                 }

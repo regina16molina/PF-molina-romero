@@ -878,22 +878,24 @@ section .lineas {
 }
 @media screen and (max-width: 450px) {
   .flex-row .menu-vertical .side-bar ul {
-    margin: 5px;
+    margin: 10px;
   }
 }
 .flex-row .menu-vertical .side-bar ul li:hover ul {
   height: auto;
-  padding: 5px 10px;
+  padding: 5px 45px 0px 0px;
 }
 @media screen and (max-width: 576px) {
   .flex-row .menu-vertical .side-bar ul li ul {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 }
 @media screen and (max-width: 450px) {
   .flex-row .menu-vertical .side-bar ul li a {
     font-size: 0.8em;
+    width: 100%;
   }
 }
 .flex-row .menu-vertical .side-bar ul ul {
