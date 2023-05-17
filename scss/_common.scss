@@ -188,7 +188,7 @@ section {
         }
     
         @include mobile {
-            width: 100%;
+            width: 80%;
             padding-top: 10px;
         }
     
@@ -264,12 +264,18 @@ section {
         .error-1{
             font-family: 'Montserrat', sans-serif;
             padding-top: 80px;
+            @include mobile-xs{
+                padding-top: 20px;
+            }
             h1{
                 font-weight: $fontBold;
                 font-size: 5em;
                 color: $mainColor;
                 @include mobile {
                     font-size: 3em;
+                }
+                @include mobile-xs{
+                font-size: $textXl ;
                 }
             }
 
@@ -280,11 +286,17 @@ section {
                 @include mobile {
                     font-size: $textXlg;
                 }
+                @include mobile-xs{
+                    font-size: $textLlg;
+                }
             }
             h3{
                 font-size: $textXlg;
                 @include mobile {
                     font-size: $textLg;
+                }
+                @include mobile-xs{
+                    font-size: $textMd;
                 }
             }
             .btn-secondary{
@@ -306,6 +318,10 @@ section {
                 @include mobile{
                     width: 50%;
                     font-size: $textSm;
+                }
+                @include mobile-xs{
+                    width: 50%;
+                    font-size: 0.7em;
                 }
             }
         }

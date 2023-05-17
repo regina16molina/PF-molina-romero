@@ -156,7 +156,7 @@
     .grid-producto {
         display: grid;
         row-gap: 40px;
-
+        padding-left: 30px;
         .grids-producto {
             @include flex-center;
 

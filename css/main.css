@@ -251,6 +251,7 @@
 .contenedor-grid-producto .grid-producto {
   display: grid;
   row-gap: 40px;
+  padding-left: 30px;
 }
 .contenedor-grid-producto .grid-producto .grids-producto {
   display: flex;
@@ -853,7 +854,7 @@ section .lineas {
 }
 @media screen and (max-width: 576px) {
   .flex-row .menu-vertical {
-    width: 100%;
+    width: 80%;
     padding-top: 10px;
   }
 }
@@ -925,6 +926,11 @@ section .lineas {
   font-family: "Montserrat", sans-serif;
   padding-top: 80px;
 }
+@media screen and (max-width: 450px) {
+  .align .error .error-1 {
+    padding-top: 20px;
+  }
+}
 .align .error .error-1 h1 {
   font-weight: 700;
   font-size: 5em;
@@ -933,6 +939,11 @@ section .lineas {
 @media screen and (max-width: 576px) {
   .align .error .error-1 h1 {
     font-size: 3em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .align .error .error-1 h1 {
+    font-size: 2.5em;
   }
 }
 .align .error .error-1 h2 {
@@ -945,12 +956,22 @@ section .lineas {
     font-size: 1.8em;
   }
 }
+@media screen and (max-width: 450px) {
+  .align .error .error-1 h2 {
+    font-size: 1.5em;
+  }
+}
 .align .error .error-1 h3 {
   font-size: 1.8em;
 }
 @media screen and (max-width: 576px) {
   .align .error .error-1 h3 {
     font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .align .error .error-1 h3 {
+    font-size: 1em;
   }
 }
 .align .error .error-1 .btn-secondary {
@@ -973,6 +994,12 @@ section .lineas {
   .align .error .error-1 .btn-secondary {
     width: 50%;
     font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .align .error .error-1 .btn-secondary {
+    width: 50%;
+    font-size: 0.7em;
   }
 }
 
