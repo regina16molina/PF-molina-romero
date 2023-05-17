@@ -856,6 +856,7 @@ section .lineas {
   .flex-row .menu-vertical {
     width: 80%;
     padding-top: 10px;
+    padding-left: 0px;
   }
 }
 .flex-row .menu-vertical .side-bar ul {
@@ -999,7 +1000,7 @@ section .lineas {
 @media screen and (max-width: 450px) {
   .align .error .error-1 .btn-secondary {
     width: 50%;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
 }
 

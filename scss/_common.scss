@@ -190,6 +190,7 @@ section {
         @include mobile {
             width: 80%;
             padding-top: 10px;
+            padding-left: 0px;
         }
     
         .side-bar {
@@ -321,7 +322,7 @@ section {
                 }
                 @include mobile-xs{
                     width: 50%;
-                    font-size: 0.7em;
+                    font-size: 0.6em;
                 }
             }
         }
