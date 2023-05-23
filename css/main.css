@@ -1021,71 +1021,91 @@ section .lineas {
   }
 }
 
-.caja-footer {
+.box-footer {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 20px;
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(209, 207, 207);
 }
-.caja-footer .box-footer {
+.box-footer .caja-footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 90%;
   margin-top: 25px;
 }
-.caja-footer .box-footer .nosotros {
+.box-footer .caja-footer .nosotros {
   width: 31%;
   padding-right: 40px;
 }
-.caja-footer .box-footer .nosotros #nosotros {
+@media screen and (max-width: 576px) {
+  .box-footer .caja-footer .nosotros {
+    width: 100%;
+  }
+}
+.box-footer .caja-footer .nosotros #nosotros {
   font-family: "League Spartan", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
 }
-.caja-footer .box-footer .nosotros #nosotros-texto {
+.box-footer .caja-footer .nosotros #nosotros-texto {
   font-family: "League Spartan", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 1em;
   text-align: left;
 }
-.caja-footer .box-footer .links {
+.box-footer .caja-footer .links {
   width: 31%;
   padding-right: 40px;
 }
-.caja-footer .box-footer .links #links {
+@media screen and (max-width: 576px) {
+  .box-footer .caja-footer .links {
+    width: 100%;
+  }
+}
+.box-footer .caja-footer .links #links {
   font-family: "League Spartan", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
 }
-.caja-footer .box-footer .links ul {
+.box-footer .caja-footer .links ul {
   text-align: left;
   list-style: none;
 }
-.caja-footer .box-footer .links ul li a {
+.box-footer .caja-footer .links ul li a {
   text-decoration: none;
   color: black;
 }
-.caja-footer .box-footer .contacto {
+.box-footer .caja-footer .contacto {
   width: 31%;
   padding-right: 40px;
 }
-.caja-footer .box-footer .contacto #contacto {
+@media screen and (max-width: 576px) {
+  .box-footer .caja-footer .contacto {
+    width: 100%;
+  }
+}
+.box-footer .caja-footer .contacto #contacto {
   font-family: "League Spartan", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 1em;
 }
-.caja-footer .box-footer .contacto ul {
+.box-footer .caja-footer .contacto ul {
   list-style: none;
 }
-.caja-footer .box-footer .contacto ul li a {
+.box-footer .caja-footer .contacto ul li a {
   text-decoration: none;
   color: black;
+}
+@media screen and (max-width: 576px) {
+  .box-footer .caja-footer {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

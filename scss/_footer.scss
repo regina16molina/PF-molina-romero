@@ -1,10 +1,9 @@
-.caja-footer {
+.box-footer {
     @include flex-center;
     width: 100%;
     margin-top: 20px;
-    background-color: rgb(243, 243, 243);
-
-    .box-footer {
+    background-color: rgb(209, 207, 207);
+    .caja-footer {
         @include flex-row;
         justify-content: center;
         width: 90%;
@@ -12,6 +11,9 @@
         .nosotros {
             width: 31%;
             padding-right: 40px;
+            @include mobile{
+                width: 100%;
+            }
 
             #nosotros {
                 font-family: 'League Spartan', sans-serif;
@@ -32,6 +34,9 @@
         .links {
             width: 31%;
             padding-right: 40px;
+            @include mobile{
+                width: 100%;
+            }
 
             #links {
                 font-family: 'League Spartan', sans-serif;
@@ -55,6 +60,9 @@
         .contacto {
             width: 31%;
             padding-right: 40px;
+            @include mobile{
+                width: 100%;
+            }
 
             #contacto {
                 font-family: 'League Spartan', sans-serif;
@@ -73,6 +81,8 @@
                 }
             }
         }
+        @include mobile {
+            flex-direction: column;
+        }
     }
-    
 }
